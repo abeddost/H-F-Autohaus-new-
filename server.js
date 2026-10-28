@@ -20,8 +20,8 @@ const VERSIONED_STATIC_CACHE = 'public, max-age=31536000, immutable';
 const SHORT_CDN_CACHE = 'public, s-maxage=3600, stale-while-revalidate=86400';
 const NO_STORE = 'no-store';
 
-// Initialize Resend
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend (the SDK throws without a key, so the app stays usable locally without one)
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 // Middleware
 app.use(express.json({ limit: '16kb' }));
@@ -326,6 +326,14 @@ app.post('/contact', async (req, res) => {
             return res.status(400).json({
                 success: false,
                 message: 'Bitte fuellen Sie alle Pflichtfelder aus und bestaetigen Sie die Datenschutzerklaerung.'
+            });
+        }
+
+        if (!resend) {
+            console.error('Contact form submitted but RESEND_API_KEY is not set');
+            return res.status(503).json({
+                success: false,
+                message: 'Fehler beim Senden der E-Mail. Bitte versuchen Sie es spaeter erneut.'
             });
         }
 
