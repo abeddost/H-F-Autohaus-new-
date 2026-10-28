@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(favicon\\.ico|favicon-96x96\\.png|apple-touch-icon\\.png|icon-192\\.png|icon-512\\.png|site\\.webmanifest)",
+      "dest": "/public/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800"
+      }
+    },
+    {
+      "src": "/logo-360\\.v1\\.png",
+      "dest": "/public/logo-360.v1.png",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/images/optimized/(.*)",
+      "dest": "/public/images/optimized/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/Videos/optimized/(.*)",
+      "dest": "/public/Videos/optimized/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/(images|Videos)/(.*)",
+      "dest": "/public/$1/$2",
+      "headers": {
+        "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800"
+      }
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "/public/js/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800"
+      }
+    },
+    {
+      "src": "/(styles\\.css)",
+      "dest": "/public/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800"
+      }
+    },
+    {
+      "src": "/(robots\\.txt)",
+      "dest": "/public/$1",
+      "headers": {
+        "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400"
+      }
+    },
+    {
+      "src": "/contact",
+      "dest": "/server.js",
+      "methods": [
+        "POST"
+      ]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/sync-vehicles?sync=1",
+      "schedule": "0 3 * * *"
+    }
+  ]
+}

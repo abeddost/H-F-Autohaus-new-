@@ -1,0 +1,33 @@
+<%
+// Usage: include('partials/vehicle-card', { vehicle })
+const cardFmt = n => new Intl.NumberFormat('de-DE').format(n);
+const pageUrl = `/bestand/${vehicle.slug}`;
+const cardImage = vehicle.images[0];
+%>
+<article class="stock-card">
+    <a class="stock-photo" href="<%= pageUrl %>" aria-label="<%= vehicle.title %> ansehen">
+        <% if (cardImage) { %><img src="<%= cardImage.medium || cardImage.url %>" alt="<%= vehicle.title %>" loading="lazy" width="800" height="500" onerror="this.hidden=true"><% } %>
+        <span class="stock-photo-arrow" aria-hidden="true">→</span>
+    </a>
+    <div class="stock-body">
+        <p class="text-[0.68rem] uppercase tracking-widest text-accent"><%= vehicle.make %></p>
+        <h3 class="stock-title" title="<%= vehicle.title %>"><a href="<%= pageUrl %>" class="transition-colors hover:text-accent-light"><%= vehicle.title %></a></h3>
+        <p class="stock-specs">
+            <span>EZ <%= vehicle.firstRegistration ? vehicle.firstRegistration.split('-').reverse().join('/') : 'k. A.' %></span>
+            <span><%= vehicle.mileage != null ? cardFmt(vehicle.mileage) + ' km' : 'km k. A.' %></span>
+            <span><%= vehicle.fuel || 'Kraftstoff k. A.' %></span>
+            <span><%= vehicle.gearbox || 'Getriebe k. A.' %></span>
+            <% if (vehicle.power) { %><span><%= vehicle.power.ps %> PS</span><% } %>
+        </p>
+        <div class="stock-footer">
+            <div class="min-w-0">
+                <p class="font-display text-2xl font-medium tracking-tight"><%= vehicle.price.amount != null ? cardFmt(vehicle.price.amount) + ' €' : 'Preis auf Anfrage' %></p>
+                <p class="mt-0.5 whitespace-nowrap text-[0.7rem] text-mute"><%= vehicle.price.vatDeductible ? 'MwSt. ausweisbar' : 'Finanzierung auf Anfrage' %></p>
+            </div>
+            <div class="flex shrink-0 items-center gap-2">
+                <a class="stock-icon-btn" href="<%= whatsappVehicleUrl(vehicle) %>" target="_blank" rel="noopener noreferrer" aria-label="Zu diesem Fahrzeug per WhatsApp beraten lassen" title="Zu diesem Fahrzeug beraten lassen"><%- include('icon', {name:'whatsapp', cls:'h-4 w-4'}) %></a>
+                <a class="btn btn-ghost btn-sm stock-details" href="<%= pageUrl %>" aria-label="<%= vehicle.title %> – Details ansehen"><span class="stock-details-label">Details</span> <%- include('icon', {name:'arrow-right', cls:'h-3.5 w-3.5'}) %></a>
+            </div>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+    <!-- Critical Meta Tags First -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://hf-autos.de/blog/<%= post.slug %>">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:image" content="<%= post.image %>">
+    <meta property="og:locale" content="de_DE">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hf-autos.de/blog/<%= post.slug %>">
+    <meta property="twitter:title" content="<%= title %>">
+    <meta property="twitter:description" content="<%= description %>">
+    <meta property="twitter:image" content="<%= post.image %>">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="HF autos, HF Autohaus, H&F autos, H&F Autohaus, Autohaus Blog, Autoankauf Tipps, Autoverkauf Ratgeber, Gebrauchtwagen Tipps, Auto verkaufen Bodenheim, Autoankauf Mainz, Gebrauchtwagen kaufen">
+    <meta name="author" content="H&F Autohaus Bodenheim">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hf-autos.de/blog/<%= post.slug %>">
+
+    <!-- Structured Data for Blog Post -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "<%= post.title %>",
+      "image": "<%= post.image %>",
+      "datePublished": "<%= post.date %>",
+      "dateModified": "<%= post.date %>",
+      "author": {
+        "@type": "Organization",
+        "name": "H&F Autohaus Bodenheim"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "H&F Autohaus Bodenheim",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://hf-autos.de/logo-360.v1.png"
+        }
+      },
+      "description": "<%= description %>"
+    }
+    </script>
+
+<%- include('partials/head-assets') %>
+</head>
+<body>
+<%- include('partials/nav', { active: 'blog' }) %>
+
+<main id="main">
+    <article>
+        <header class="relative overflow-hidden pb-14 pt-40 md:pt-48">
+            <div class="pointer-events-none absolute -right-40 top-10 h-[30rem] w-[30rem] rounded-full bg-accent/[0.06] blur-[120px]"></div>
+            <div class="container relative">
+                <div class="mx-auto max-w-4xl">
+                    <div class="hero-enter">
+                        <a href="/blog" class="mb-10 inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-faint transition-colors hover:text-bone">
+                            <%- include('partials/icon', { name: 'arrow-left', cls: 'h-4 w-4' }) %> Zurück zum Ratgeber
+                        </a>
+                        <p class="mb-6 text-xs uppercase tracking-[0.16em] text-accent">
+                            <time datetime="<%= post.date %>"><%= new Date(post.date).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' }) %></time>
+                        </p>
+                        <h1 class="display text-4xl md:text-6xl" style="line-height:1.04"><%= post.title %></h1>
+                        <p class="lead mt-6 max-w-2xl"><%= post.excerpt %></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="reveal media-frame mx-auto aspect-[2/1] max-w-6xl">
+                <img src="<%= post.image %>" alt="<%= post.title %>" class="h-full w-full object-cover">
+            </div>
+        </div>
+
+        <div class="container py-16 md:py-24">
+            <div class="mx-auto max-w-prose">
+                <div class="prose-hf">
+                    <% if (post.slug === 'tipps-auto-schnell-verkaufen-bodenheim') { %>
+                        <p class="lead-in">
+                            Möchten Sie Ihr Auto schnell verkaufen? In Bodenheim und Umgebung gibt es verschiedene Möglichkeiten, Ihr Fahrzeug zu einem fairen Preis zu verkaufen. In diesem Ratgeber erfahren Sie, wie Sie den Verkaufsprozess beschleunigen und den besten Preis erzielen.
+                        </p>
+
+                        <h2>1. Vorbereitung ist das A und O</h2>
+                        <p>
+                            Bevor Sie Ihr Auto zum Verkauf anbieten, sollten Sie es gründlich vorbereiten. Ein sauberes und gepflegtes Fahrzeug wirkt professionell und kann den Verkaufspreis deutlich erhöhen.
+                        </p>
+                        <h3>Äußere Aufbereitung</h3>
+                        <ul>
+                            <li><strong>Gründliche Reinigung:</strong> Waschen Sie das Auto innen und außen gründlich. Ein professioneller Innenraumreinigungsservice kann sich lohnen.</li>
+                            <li><strong>Kleine Reparaturen:</strong> Beheben Sie kleine Kratzer oder Dellen, wenn dies kostengünstig möglich ist.</li>
+                            <li><strong>Reifen prüfen:</strong> Stellen Sie sicher, dass die Reifen in gutem Zustand sind und der Luftdruck stimmt.</li>
+                        </ul>
+
+                        <h2>2. Den richtigen Preis finden</h2>
+                        <p>
+                            Die Preisgestaltung ist entscheidend für einen schnellen Verkauf. Ein zu hoher Preis schreckt Interessenten ab, während ein zu niedriger Preis Geld kostet.
+                        </p>
+                        <h3>Preisermittlung</h3>
+                        <ul>
+                            <li><strong>Online-Bewertungstools nutzen:</strong> Verwenden Sie Plattformen wie meinautopreis24.de für eine erste Einschätzung.</li>
+                            <li><strong>Vergleichspreise recherchieren:</strong> Schauen Sie sich ähnliche Fahrzeuge auf mobile.de oder autoscout24.de an.</li>
+                            <li><strong>Professionelle Bewertung:</strong> Lassen Sie Ihr Auto von einem Autohändler wie H&F Autohaus Bodenheim bewerten.</li>
+                        </ul>
+
+                        <h2>3. Verkaufswege in Bodenheim</h2>
+                        <p>
+                            In Bodenheim und der Region Mainz haben Sie mehrere Optionen, um Ihr Auto zu verkaufen:
+                        </p>
+                        <h3>Privater Verkauf</h3>
+                        <ul>
+                            <li>Verkauf über Online-Plattformen (mobile.de, autoscout24.de)</li>
+                            <li>Verkauf über Kleinanzeigen</li>
+                            <li>Vorteil: Oft höhere Preise möglich</li>
+                            <li>Nachteil: Mehr Zeitaufwand, Verhandlungen, Probefahrten</li>
+                        </ul>
+                        <h3>Verkauf an Autohändler</h3>
+                        <ul>
+                            <li>Professionelle Abwicklung</li>
+                            <li>Schnelle Transaktion</li>
+                            <li>Keine Verhandlungen oder Probefahrten</li>
+                            <li>Barzahlung möglich</li>
+                        </ul>
+
+                        <h2>4. Dokumente vorbereiten</h2>
+                        <p>
+                            Für einen reibungslosen Verkauf benötigen Sie folgende Unterlagen:
+                        </p>
+                        <ul>
+                            <li>Fahrzeugschein (Zulassungsbescheinigung Teil I)</li>
+                            <li>Fahrzeugbrief (Zulassungsbescheinigung Teil II)</li>
+                            <li>Letzte TÜV-Bescheinigung</li>
+                            <li>Serviceheft und Wartungsnachweise</li>
+                            <li>Alle Schlüssel</li>
+                        </ul>
+
+                        <h2>5. Professioneller Autoankauf bei H&F Autohaus</h2>
+                        <p>
+                            Als erfahrener Autohändler in Bodenheim bietet H&F Autohaus einen professionellen Autoankauf-Service:
+                        </p>
+                        <ul>
+                            <li><strong>Schnelle Bewertung:</strong> Wir bewerten Ihr Fahrzeug innerhalb weniger Minuten.</li>
+                            <li><strong>Faire Preise:</strong> Basierend auf Marktwert, Zustand und Nachfrage.</li>
+                            <li><strong>Barzahlung:</strong> Sofortige Zahlung möglich.</li>
+                            <li><strong>Komplette Abwicklung:</strong> Wir übernehmen alle Formalitäten.</li>
+                        </ul>
+
+                        <h2>Fazit</h2>
+                        <p>
+                            Ein Auto schnell in Bodenheim zu verkaufen erfordert Vorbereitung, die richtige Preisgestaltung und die Wahl des passenden Verkaufswegs. Für eine schnelle und unkomplizierte Abwicklung ist der Verkauf an einen professionellen Autohändler wie H&F Autohaus oft die beste Lösung.
+                        </p>
+                        <p>
+                            <strong>Kontaktieren Sie uns noch heute für eine kostenlose Fahrzeugbewertung:</strong> <a href="tel:017662878366">017662878366</a> oder nutzen Sie unser <a href="/kontakt">Kontaktformular</a>.
+                        </p>
+
+                    <% } else if (post.slug === 'wie-funktioniert-autoankauf-mainz') { %>
+                        <p class="lead-in">
+                            Sie möchten Ihr Auto in Mainz verkaufen? Der professionelle Autoankauf bei einem seriösen Autohändler bietet viele Vorteile. In diesem Artikel erklären wir Ihnen Schritt für Schritt, wie der Autoankauf in Mainz funktioniert.
+                        </p>
+
+                        <h2>Was ist Autoankauf?</h2>
+                        <p>
+                            Beim Autoankauf kauft ein professioneller Autohändler Ihr Fahrzeug direkt von Ihnen. Im Gegensatz zum privaten Verkauf erhalten Sie sofort eine faire Bewertung und können das Fahrzeug schnell und unkompliziert verkaufen.
+                        </p>
+
+                        <h2>Der Autoankauf-Prozess in Mainz</h2>
+                        <h3>Schritt 1: Kontaktaufnahme</h3>
+                        <p>
+                            Der erste Schritt ist die Kontaktaufnahme mit einem Autohändler. Bei H&F Autohaus können Sie uns telefonisch unter <a href="tel:017662878366">017662878366</a> erreichen oder unser <a href="/kontakt">Online-Kontaktformular</a> nutzen. Alternativ können Sie auch direkt vorbeikommen.
+                        </p>
+
+                        <h3>Schritt 2: Fahrzeugvorstellung</h3>
+                        <p>
+                            Bringen Sie Ihr Fahrzeug zu unserem Autohaus in Bodenheim (nur 15 Minuten von Mainz entfernt) oder vereinbaren Sie einen Termin. Wir benötigen:
+                        </p>
+                        <ul>
+                            <li>Das Fahrzeug selbst</li>
+                            <li>Fahrzeugschein und Fahrzeugbrief</li>
+                            <li>Alle vorhandenen Schlüssel</li>
+                            <li>Serviceheft und Wartungsnachweise (falls vorhanden)</li>
+                        </ul>
+
+                        <h3>Schritt 3: Professionelle Fahrzeugbewertung</h3>
+                        <p>
+                            Unser Experte führt eine gründliche Bewertung durch:
+                        </p>
+                        <ul>
+                            <li><strong>Äußerer Zustand:</strong> Karosserie, Lack, Reifen, Scheinwerfer</li>
+                            <li><strong>Technischer Zustand:</strong> Motor, Getriebe, Bremsen, Elektronik</li>
+                            <li><strong>Innenraum:</strong> Sitzbezüge, Armaturenbrett, Elektronik</li>
+                            <li><strong>Kilometerstand:</strong> Prüfung auf Plausibilität</li>
+                            <li><strong>Unfallhistorie:</strong> Prüfung auf Vorschäden</li>
+                        </ul>
+
+                        <h3>Schritt 4: Preisangebot</h3>
+                        <p>
+                            Basierend auf der Bewertung erhalten Sie ein faires und transparentes Preisangebot. Der Preis orientiert sich an:
+                        </p>
+                        <ul>
+                            <li>Marktwert des Fahrzeugs</li>
+                            <li>Zustand und Ausstattung</li>
+                            <li>Aktueller Marktlage</li>
+                            <li>Nachfrage nach diesem Modell</li>
+                        </ul>
+
+                        <h3>Schritt 5: Vertragsabschluss</h3>
+                        <p>
+                            Wenn Sie mit dem Angebot einverstanden sind, erfolgt der Vertragsabschluss. Wir übernehmen alle Formalitäten:
+                        </p>
+                        <ul>
+                            <li>Ausfüllen der Kaufverträge</li>
+                            <li>Übergabe der Fahrzeugpapiere</li>
+                            <li>Abmeldung des Fahrzeugs (optional)</li>
+                        </ul>
+
+                        <h3>Schritt 6: Zahlung</h3>
+                        <p>
+                            Die Zahlung erfolgt sofort und unkompliziert:
+                        </p>
+                        <ul>
+                            <li><strong>Barzahlung:</strong> Bei kleineren Beträgen möglich</li>
+                            <li><strong>Überweisung:</strong> Schnelle Überweisung auf Ihr Konto</li>
+                            <li><strong>Keine Wartezeiten:</strong> Sofortige Abwicklung</li>
+                        </ul>
+
+                        <h2>Vorteile des Autoankaufs in Mainz</h2>
+                        <ul>
+                            <li><strong>Schnelligkeit:</strong> Verkauf innerhalb weniger Stunden möglich</li>
+                            <li><strong>Keine Verhandlungen:</strong> Faires Angebot ohne langes Feilschen</li>
+                            <li><strong>Professionelle Abwicklung:</strong> Alle Formalitäten werden übernommen</li>
+                            <li><strong>Sicherheit:</strong> Seriöser Händler, keine Betrugsrisiken</li>
+                            <li><strong>Flexibilität:</strong> Auch bei Finanzierung oder Leasing möglich</li>
+                        </ul>
+
+                        <h2>H&F Autohaus - Ihr Partner für Autoankauf in Mainz</h2>
+                        <p>
+                            Als erfahrener Autohändler in Bodenheim (bei Mainz) bieten wir seit über 6 Jahren professionellen Autoankauf an. Wir kaufen alle Fahrzeugtypen:
+                        </p>
+                        <ul>
+                            <li>Pkw aller Marken und Modelle</li>
+                            <li>Sportwagen und Luxusfahrzeuge</li>
+                            <li>Classic Cars und Oldtimer</li>
+                            <li>Fahrzeuge mit Schäden oder Unfallhistorie</li>
+                            <li>Fahrzeuge mit laufender Finanzierung</li>
+                        </ul>
+
+                        <h2>Fazit</h2>
+                        <p>
+                            Der Autoankauf in Mainz bei einem professionellen Händler ist die schnellste und sicherste Methode, Ihr Fahrzeug zu verkaufen. Bei H&F Autohaus erhalten Sie eine faire Bewertung, schnelle Abwicklung und sofortige Zahlung.
+                        </p>
+                        <p>
+                            <strong>Kontaktieren Sie uns für eine kostenlose Fahrzeugbewertung:</strong> <a href="tel:017662878366">017662878366</a> oder besuchen Sie uns in Bodenheim, Am Kuemmerling 41a.
+                        </p>
+
+                    <% } else if (post.slug === 'worauf-beim-gebrauchtwagen-achten') { %>
+                        <p class="lead-in">
+                            Der Kauf eines Gebrauchtwagens kann eine kluge Entscheidung sein, erfordert aber auch Sorgfalt. In diesem Ratgeber erfahren Sie, worauf Sie beim Gebrauchtwagenkauf achten sollten, um eine gute Kaufentscheidung zu treffen.
+                        </p>
+
+                        <h2>1. Äußerer Zustand prüfen</h2>
+                        <p>
+                            Beginnen Sie mit einer gründlichen Sichtprüfung des Fahrzeugs:
+                        </p>
+                        <h3>Karosserie und Lack</h3>
+                        <ul>
+                            <li><strong>Rost:</strong> Prüfen Sie besonders kritische Stellen wie Radläufe, Türkanten und Unterboden</li>
+                            <li><strong>Lackschäden:</strong> Achten Sie auf Kratzer, Dellen und Lackunterschiede, die auf Unfälle hindeuten könnten</li>
+                            <li><strong>Spaltmaße:</strong> Ungleichmäßige Spalten können auf Reparaturen hinweisen</li>
+                            <li><strong>Türen und Kofferraum:</strong> Prüfen Sie, ob alles korrekt schließt</li>
+                        </ul>
+
+                        <h2>2. Technischer Zustand</h2>
+                        <h3>Motor</h3>
+                        <ul>
+                            <li>Kaltstart beobachten - ungewöhnliche Geräusche?</li>
+                            <li>Ölstand und Ölqualität prüfen</li>
+                            <li>Kühlmittel prüfen</li>
+                            <li>Rauch beim Starten (blau = Ölverbrauch, weiß = Wassereintritt)</li>
+                        </ul>
+                        <h3>Getriebe</h3>
+                        <ul>
+                            <li>Bei Automatik: Ruckeln oder verzögerte Schaltvorgänge?</li>
+                            <li>Bei Schaltgetriebe: Leichtgängiges Schalten?</li>
+                            <li>Geräusche beim Schalten?</li>
+                        </ul>
+                        <h3>Bremsen</h3>
+                        <ul>
+                            <li>Bremsweg testen</li>
+                            <li>Vibrationen beim Bremsen?</li>
+                            <li>Bremsbeläge prüfen</li>
+                        </ul>
+
+                        <h2>3. Innenraum prüfen</h2>
+                        <ul>
+                            <li><strong>Sitzbezüge:</strong> Abnutzung, Risse, Flecken</li>
+                            <li><strong>Armaturenbrett:</strong> Funktionieren alle Anzeigen?</li>
+                            <li><strong>Elektronik:</strong> Radio, Navigation, Klimaanlage, Fensterheber</li>
+                            <li><strong>Geruch:</strong> Feuchtigkeit, Rauch, ungewöhnliche Gerüche</li>
+                        </ul>
+
+                        <h2>4. Fahrzeugpapiere prüfen</h2>
+                        <p>
+                            Die Papiere sind entscheidend für die Rechtssicherheit:
+                        </p>
+                        <ul>
+                            <li><strong>Fahrzeugschein (Teil I):</strong> Prüfen Sie, ob alle Angaben korrekt sind</li>
+                            <li><strong>Fahrzeugbrief (Teil II):</strong> Wichtig für die Eigentumsübertragung</li>
+                            <li><strong>Kilometerstand:</strong> Prüfen Sie auf Plausibilität (Serviceheft, TÜV-Berichte)</li>
+                            <li><strong>Vorbesitzer:</strong> Anzahl der Vorbesitzer prüfen</li>
+                            <li><strong>Unfallhistorie:</strong> Gibt es Hinweise auf Vorschäden?</li>
+                        </ul>
+
+                        <h2>5. Servicehistorie und Wartung</h2>
+                        <p>
+                            Ein gepflegtes Fahrzeug mit vollständiger Servicehistorie ist wertvoller:
+                        </p>
+                        <ul>
+                            <li>Serviceheft prüfen - regelmäßige Wartungen?</li>
+                            <li>Letzte Inspektion - wann war sie?</li>
+                            <li>Reparaturen dokumentiert?</li>
+                            <li>TÜV-Berichte einsehen</li>
+                        </ul>
+
+                        <h2>6. Probefahrt</h2>
+                        <p>
+                            Eine Probefahrt ist unerlässlich:
+                        </p>
+                        <ul>
+                            <li><strong>Fahrverhalten:</strong> Lenkung, Bremsen, Beschleunigung</li>
+                            <li><strong>Geräusche:</strong> Ungewöhnliche Geräusche beim Fahren?</li>
+                            <li><strong>Komfort:</strong> Sitze, Klimaanlage, Sichtverhältnisse</li>
+                            <li><strong>Verschiedene Geschwindigkeiten:</strong> Stadt, Landstraße, Autobahn</li>
+                        </ul>
+
+                        <h2>7. Professionelle Inspektion</h2>
+                        <p>
+                            Für eine fundierte Entscheidung empfiehlt sich eine professionelle Inspektion:
+                        </p>
+                        <ul>
+                            <li>ADAC-Gebrauchtwagencheck</li>
+                            <li>DEKRA-Gebrauchtwagenprüfung</li>
+                            <li>Prüfung durch unabhängige Werkstatt</li>
+                        </ul>
+
+                        <h2>8. Preisvergleich</h2>
+                        <p>
+                            Vergleichen Sie den Preis mit ähnlichen Fahrzeugen:
+                        </p>
+                        <ul>
+                            <li>Online-Portale (mobile.de, autoscout24.de) durchsuchen</li>
+                            <li>Marktwert ermitteln (Schwacke-Liste, ADAC-Gebrauchtwagenpreis)</li>
+                            <li>Berücksichtigen Sie Ausstattung und Zustand</li>
+                        </ul>
+
+                        <h2>9. Kauf bei seriösem Händler</h2>
+                        <p>
+                            Der Kauf bei einem seriösen Autohändler bietet viele Vorteile:
+                        </p>
+                        <ul>
+                            <li><strong>Gewährleistung:</strong> Rechtliche Absicherung</li>
+                            <li><strong>Transparenz:</strong> Vollständige Fahrzeughistorie</li>
+                            <li><strong>Service:</strong> Nach dem Kauf unterstützt</li>
+                            <li><strong>Sicherheit:</strong> Keine Betrugsrisiken</li>
+                        </ul>
+
+                        <h2>H&F Autohaus - Transparenter Gebrauchtwagenkauf</h2>
+                        <p>
+                            Bei H&F Autohaus Bodenheim erhalten Sie:
+                        </p>
+                        <ul>
+                            <li>Vollständige Fahrzeughistorie</li>
+                            <li>Professionelle Beratung</li>
+                            <li>Gewährleistung und Garantie</li>
+                            <li>Probefahrten nach Terminvereinbarung</li>
+                            <li>Faire Preise und transparente Konditionen</li>
+                        </ul>
+
+                        <h2>Checkliste für den Gebrauchtwagenkauf</h2>
+                        <ul>
+                            <li>✓ Äußerer Zustand geprüft</li>
+                            <li>✓ Technischer Zustand getestet</li>
+                            <li>✓ Innenraum inspiziert</li>
+                            <li>✓ Fahrzeugpapiere geprüft</li>
+                            <li>✓ Servicehistorie eingesehen</li>
+                            <li>✓ Probefahrt durchgeführt</li>
+                            <li>✓ Preisvergleich gemacht</li>
+                            <li>✓ Professionelle Inspektion (optional)</li>
+                            <li>✓ Kaufvertrag geprüft</li>
+                        </ul>
+
+                        <h2>Fazit</h2>
+                        <p>
+                            Beim Gebrauchtwagenkauf ist Sorgfalt entscheidend. Nehmen Sie sich Zeit für die Prüfung, lassen Sie sich nicht drängen und nutzen Sie professionelle Unterstützung. Ein seriöser Autohändler wie H&F Autohaus bietet Ihnen Sicherheit und Transparenz.
+                        </p>
+                        <p>
+                            <strong>Besuchen Sie uns in Bodenheim für eine persönliche Beratung:</strong> Am Kuemmerling 41a, 55294 Bodenheim. Oder kontaktieren Sie uns unter <a href="tel:017662878366">017662878366</a>.
+                        </p>
+                    <% } %>
+                </div>
+
+                <!-- CTA -->
+                <div class="surface relative mt-20 overflow-hidden p-8 md:p-10">
+                    <div class="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/10 blur-[90px]"></div>
+                    <div class="relative">
+                        <p class="eyebrow mb-5">H&amp;F Autohaus Bodenheim</p>
+                        <p class="font-display text-2xl font-medium tracking-tight md:text-3xl">Möchten Sie Ihr Auto verkaufen oder kaufen?</p>
+                        <p class="mt-3 text-mute">Wir beraten Sie persönlich und unverbindlich.</p>
+                        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                            <a href="/kontakt" class="btn btn-primary">Kontakt aufnehmen <%- include('partials/icon', { name: 'arrow-right', extra: 'arrow' }) %></a>
+                            <a href="tel:+4917662878366" class="btn btn-ghost"><%- include('partials/icon', { name: 'phone' }) %> 0176 628 783 66</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 border-t border-white/[0.08] pt-8">
+                    <a href="/blog" class="link-arrow"><%- include('partials/icon', { name: 'arrow-left' }) %> Alle Artikel</a>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+
+<%- include('partials/footer') %>
+</body>
+</html>

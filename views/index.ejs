@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+    <!-- Critical Meta Tags First -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= canonicalUrl %>">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:image" content="https://hf-autos.de/logo-360.v1.png">
+    <meta property="og:locale" content="de_DE">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<%= canonicalUrl %>">
+    <meta property="twitter:title" content="<%= title %>">
+    <meta property="twitter:description" content="<%= description %>">
+    <meta property="twitter:image" content="https://hf-autos.de/logo-360.v1.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="HF autos, HF Autohaus, HF autos Bodenheim, H&F autos, H&F Autohaus, Autohaus Bodenheim, Autohaendler Bodenheim, Autoankauf Bodenheim, Autoverkauf Bodenheim, Auto verkaufen Bodenheim, Auto kaufen Bodenheim, Autohandel Mainz, Autoankauf Mainz, Autoverkauf Mainz, Auto verkaufen Mainz, Autohaendler Mainz, Autohaus Mainz, Autohaus in der Naehe, Autohaendler in der Naehe, Auto verkaufen in der Naehe, Autoankauf in der Naehe, Autohandel Wiesbaden, Autoankauf Wiesbaden, Gebrauchtwagen Bodenheim, Gebrauchtwagen Mainz, Auto Export Haendler, Auto kaufen near me, Auto verkaufen near me, KFZ Haendler Bodenheim, KFZ Handel Mainz, Auto Haendler Deutschland, Auto Verkauf schnell">
+    <meta name="author" content="H&F Autohaus Bodenheim">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["AutomotiveBusiness", "LocalBusiness"],
+      "name": "H&F Autohaus Bodenheim",
+      "alternateName": ["H&F Autohaus", "HF Autohaus", "HF autos", "H&F autos"],
+      "image": "https://hf-autos.de/logo-360.v1.png",
+      "description": "Autohaus in Bodenheim bei Mainz. Professioneller An- und Verkauf von Gebrauchtwagen. Ihr Autohaendler in der Naehe fuer Gebrauchtwagen, Barzahlung, Finanzierung und Vermittlung.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Am Kuemmerling 41a",
+        "addressLocality": "Bodenheim",
+        "addressRegion": "Rheinland-Pfalz",
+        "postalCode": "55294",
+        "addressCountry": "DE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "49.9353",
+        "longitude": "8.3200"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Bodenheim"
+        },
+        {
+          "@type": "City",
+          "name": "Mainz"
+        },
+        {
+          "@type": "City",
+          "name": "Nierstein"
+        },
+        {
+          "@type": "City",
+          "name": "Oppenheim"
+        },
+        {
+          "@type": "City",
+          "name": "Ingelheim"
+        },
+        {
+          "@type": "City",
+          "name": "Bingen"
+        }
+      ],
+      "url": "https://hf-autos.de",
+      "telephone": "+4917662878366",
+      "email": "hf.fahrzeuge@gmail.com",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://home.mobile.de/HFAUTOMOBILEMAINZKOSTHEIM"
+      ]
+    }
+    </script>
+<%- include('partials/head-assets') %>
+</head>
+<body>
+<%
+const services = [
+    { icon: 'car', title: 'Verkauf von Gebrauchtwagen', text: 'Ausgewählte Fahrzeuge aller Klassen – transparent beschrieben und fair kalkuliert.' },
+    { icon: 'swap', title: 'Ankauf & Inzahlungnahme', text: 'Unverbindliches Angebot für Ihr Fahrzeug, auf Wunsch direkt mit dem Neukauf verrechnet.' },
+    { icon: 'card', title: 'Finanzierung & Leasing', text: 'Individuelle Finanzierungsangebote, die zu Ihrem Budget passen.' },
+    { icon: 'globe', title: 'Import & Export', text: 'Abwicklung grenzüberschreitender Fahrzeuggeschäfte aus einer Hand.' },
+    { icon: 'file', title: 'Zulassungsservice', text: 'An- und Abmeldung inklusive aller Formalitäten – Sie sparen sich den Behördengang.' },
+    { icon: 'tire', title: 'Reifendienst', text: 'Reifenwechsel und Einlagerung, damit Sie zu jeder Saison sicher unterwegs sind.' },
+    { icon: 'shield', title: 'Hauptuntersuchung', text: 'Organisation der HU, damit Ihr Fahrzeug stets verkehrssicher bleibt.' },
+    { icon: 'truck', title: 'Lieferung', text: 'Auf Wunsch bringen wir Ihr neues Fahrzeug direkt zu Ihnen.' },
+    { icon: 'clipboard', title: 'Wertermittlung', text: 'Fundierte Fahrzeugbewertung auf Basis von Zustand, Historie und Markt.' }
+];
+const extras = [
+    'Inspektion & Wartung mit Partnerwerkstätten',
+    'Garantie- und Gewährleistungsangebote',
+    'Probefahrten nach Terminvereinbarung',
+    'Kfz-Versicherungsberatung in Kooperation',
+    'Reifenwechsel & Reifeneinlagerung',
+    'Anmeldung & Abmeldung'
+];
+const categories = [
+    { name: 'Sportwagen', text: 'Hochleistungsfahrzeuge für Enthusiasten' },
+    { name: 'Classic Cars', text: 'Zeitlose Klassiker und Kultfahrzeuge' },
+    { name: 'Oldtimer', text: 'Historische Fahrzeuge mit Charakter' }
+];
+%>
+<%- include('partials/nav', { isHome: true }) %>
+
+<main id="main">
+
+    <!-- Hero ------------------------------------------------------------------>
+    <section id="home" class="hero grain">
+        <video autoplay muted loop playsinline preload="metadata" poster="<%= staticAsset('/images/optimized/hero-poster-1280.v1.jpg') %>" class="hero-media" aria-hidden="true">
+            <source src="<%= staticAsset('/Videos/optimized/hero-720.v1.mp4') %>" type="video/mp4">
+        </video>
+        <div class="hero-shade"></div>
+
+        <div class="container relative z-10 flex flex-1 flex-col justify-end pb-10 pt-32 md:pb-14">
+            <div class="hero-enter max-w-4xl">
+                <p class="eyebrow mb-7">Autohaus · Bodenheim bei Mainz</p>
+                <h1 class="display text-[2.9rem] sm:text-6xl md:text-7xl lg:text-[6.25rem]">
+                    <span class="sr-only">H&amp;F Autohaus Bodenheim – </span>Gebrauchtwagen mit <span class="serif-accent">Anspruch.</span>
+                </h1>
+                <p class="lead mt-7 max-w-xl text-bone/75">
+                    An- und Verkauf, Finanzierung und Vermittlung – persönlich, transparent und fair. Ihr Autohändler für Mainz, Nierstein, Oppenheim und Umgebung.
+                </p>
+                <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+                    <a href="/bestand" class="btn btn-primary">
+                        Fahrzeugbestand ansehen
+                        <%- include('partials/icon', { name: 'arrow-up-right' }) %>
+                    </a>
+                    <a href="https://www.meinautoverkauf.de/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                        Fahrzeug verkaufen
+                        <%- include('partials/icon', { name: 'arrow-up-right' }) %>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-16 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-white/10 pt-7 md:mt-24 md:grid-cols-4">
+                <div>
+                    <p class="font-display text-2xl font-medium tracking-tight md:text-3xl">6+ Jahre</p>
+                    <p class="mt-1 text-xs uppercase tracking-[0.16em] text-mute">Erfahrung im Fahrzeughandel</p>
+                </div>
+                <div>
+                    <p class="font-display text-2xl font-medium tracking-tight md:text-3xl">36 Monate</p>
+                    <p class="mt-1 text-xs uppercase tracking-[0.16em] text-mute">Garantie möglich</p>
+                </div>
+                <div>
+                    <p class="font-display text-2xl font-medium tracking-tight md:text-3xl">Barzahlung</p>
+                    <p class="mt-1 text-xs uppercase tracking-[0.16em] text-mute">beim Fahrzeugankauf</p>
+                </div>
+                <div class="flex items-end justify-between">
+                    <div>
+                        <p class="font-display text-2xl font-medium tracking-tight md:text-3xl">Finanzierung</p>
+                        <p class="mt-1 text-xs uppercase tracking-[0.16em] text-mute">& Leasing</p>
+                    </div>
+                    <a href="<%= featured.length ? '#top-fahrzeuge' : '#leistungen' %>" class="hidden md:block" aria-label="Weiter scrollen"><span class="scroll-cue"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top-Fahrzeuge ---------------------------------------------------------->
+    <% if (featured.length) { %>
+    <section id="top-fahrzeuge" class="relative border-t border-white/[0.06] py-20 md:py-28" aria-roledescription="Karussell" aria-label="Top-Fahrzeuge">
+        <div class="container">
+            <div class="mb-10 flex flex-wrap items-end justify-between gap-6 md:mb-12">
+                <div>
+                    <p class="eyebrow reveal mb-6">Top-Fahrzeuge</p>
+                    <h2 class="heading reveal" style="--d:1">Highlights aus <span class="serif-accent">unserem Bestand.</span></h2>
+                </div>
+                <div class="reveal flex items-center gap-3" style="--d:2">
+                    <a href="/bestand" class="link-arrow mr-3 hidden text-sm sm:inline-flex">Gesamter Bestand <%- include('partials/icon', { name: 'arrow-right' }) %></a>
+                    <% if (featured.length > 1) { %>
+                    <button type="button" class="feat-arrow" data-carousel-prev aria-controls="featTrack" aria-label="Vorheriges Fahrzeug"><%- include('partials/icon', { name: 'arrow-left', cls: 'h-4 w-4' }) %></button>
+                    <button type="button" class="feat-arrow" data-carousel-next aria-controls="featTrack" aria-label="Nächstes Fahrzeug"><%- include('partials/icon', { name: 'arrow-right', cls: 'h-4 w-4' }) %></button>
+                    <% } %>
+                </div>
+            </div>
+
+            <div class="reveal" style="--d:2" data-carousel>
+                <div id="featTrack" class="feat-track" data-carousel-track aria-live="polite">
+                    <% featured.forEach((car, i) => {
+                        const carUrl = `/bestand/${car.slug}`;
+                        const img = car.images[0]; %>
+                    <article class="feat-slide" aria-roledescription="Folie" aria-label="<%= i + 1 %> von <%= featured.length %>: <%= car.title %>">
+                        <a href="<%= carUrl %>" class="feat-media" tabindex="-1" aria-hidden="true">
+                            <img src="<%= img.medium || img.url %>" srcset="<%= img.medium || img.url %> 1024w, <%= img.url %> 1600w" sizes="(min-width: 1024px) 58vw, 100vw" alt="" loading="<%= i === 0 ? 'eager' : 'lazy' %>" width="1600" height="1000">
+                            <span class="feat-count"><%= String(i + 1).padStart(2, '0') %> / <%= String(featured.length).padStart(2, '0') %></span>
+                        </a>
+                        <div class="feat-info">
+                            <div>
+                                <p class="text-[0.7rem] uppercase tracking-[0.18em] text-accent"><%= car.make %></p>
+                                <h3 class="feat-title"><a href="<%= carUrl %>" class="transition-colors hover:text-accent-light"><%= car.title %></a></h3>
+                                <dl class="feat-facts">
+                                    <div><dt>Erstzulassung</dt><dd><%= helpers.fmtMonth(car.firstRegistration) || 'k. A.' %></dd></div>
+                                    <div><dt>Kilometer</dt><dd><%= car.mileage != null ? helpers.fmtNumber(car.mileage) + ' km' : 'k. A.' %></dd></div>
+                                    <div><dt>Leistung</dt><dd><%= car.power ? car.power.ps + ' PS' : 'k. A.' %></dd></div>
+                                    <div><dt>Getriebe</dt><dd><%= car.gearbox || 'k. A.' %></dd></div>
+                                </dl>
+                            </div>
+                            <div class="mt-6 flex flex-wrap items-end justify-between gap-4 border-t border-white/[0.08] pt-5">
+                                <div>
+                                    <p class="font-display text-3xl font-medium tracking-tight md:text-4xl"><%= helpers.priceText(car) %></p>
+                                    <p class="mt-1 text-xs text-mute"><%= car.fuel || '' %><%= car.fuel ? ' · ' : '' %>Finanzierung auf Anfrage</p>
+                                </div>
+                                <a href="<%= carUrl %>" class="btn btn-primary">Details ansehen <%- include('partials/icon', { name: 'arrow-right', extra: 'arrow' }) %></a>
+                            </div>
+                        </div>
+                    </article>
+                    <% }) %>
+                </div>
+
+                <% if (featured.length > 1) { %>
+                <div class="mt-6 flex items-center justify-between gap-6">
+                    <div class="feat-dots" role="group" aria-label="Fahrzeug auswählen">
+                        <% featured.forEach((car, i) => { %>
+                        <button type="button" class="feat-dot<%= i === 0 ? ' is-active' : '' %>" data-carousel-dot="<%= i %>" aria-label="Fahrzeug <%= i + 1 %>: <%= car.title %>"<%= i === 0 ? ' aria-current="true"' : '' %>><span></span></button>
+                        <% }) %>
+                    </div>
+                    <a href="/bestand" class="link-arrow whitespace-nowrap text-sm sm:hidden">Gesamter Bestand <%- include('partials/icon', { name: 'arrow-right' }) %></a>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </section>
+    <% } %>
+
+    <!-- Leistungen ------------------------------------------------------------->
+    <section id="leistungen" class="relative border-t border-white/[0.06] bg-ink-900 py-24 md:py-36">
+        <div class="container">
+            <div class="mb-16 grid gap-8 md:mb-20 lg:grid-cols-12 lg:items-end">
+                <div class="lg:col-span-7">
+                    <p class="eyebrow reveal mb-7">Leistungen</p>
+                    <h2 class="heading reveal" style="--d:1">Alles rund um Ihr Fahrzeug – <span class="serif-accent">aus einer Hand.</span></h2>
+                </div>
+                <p class="lead reveal lg:col-span-5 lg:pb-2" style="--d:2">
+                    Vom ersten Gespräch bis zur Übergabe begleiten wir Sie persönlich – damit Kauf und Verkauf so komfortabel wie möglich werden.
+                </p>
+            </div>
+
+            <div class="reveal grid gap-px overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.08] sm:grid-cols-2 lg:grid-cols-3">
+                <% services.forEach((service, i) => { %>
+                    <div class="service-cell bg-ink-900">
+                        <span class="index">0<%= i + 1 %></span>
+                        <div class="icon-tile"><%- include('partials/icon', { name: service.icon }) %></div>
+                        <div>
+                            <h3 class="mb-2 text-lg font-medium tracking-tight text-bone"><%= service.title %></h3>
+                            <p class="text-sm leading-relaxed text-mute"><%= service.text %></p>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+
+            <div class="mt-24 grid gap-16 md:mt-32 lg:grid-cols-12">
+                <div class="lg:col-span-7">
+                    <p class="eyebrow reveal mb-8">Spezialisiert auf</p>
+                    <div class="reveal" style="--d:1">
+                        <% categories.forEach((category, i) => { %>
+                            <div class="category-row group">
+                                <span class="font-display text-xs tabular-nums tracking-widest text-faint">0<%= i + 1 %></span>
+                                <div>
+                                    <p class="category-title"><%= category.name %></p>
+                                    <p class="mt-2 text-sm text-mute"><%= category.text %></p>
+                                </div>
+                                <%- include('partials/icon', { name: 'arrow-up-right', cls: 'h-6 w-6 text-faint transition-all duration-500 group-hover:text-accent group-hover:-translate-y-1 group-hover:translate-x-1' }) %>
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 lg:col-start-9">
+                    <p class="eyebrow reveal mb-8">Zusätzliche Services</p>
+                    <ul class="reveal space-y-0" style="--d:1">
+                        <% extras.forEach(extra => { %>
+                            <li class="flex items-start gap-4 border-t border-white/[0.08] py-4 text-[0.95rem] text-bone/85 last:border-b">
+                                <%- include('partials/icon', { name: 'check', cls: 'mt-0.5 h-4 w-4 shrink-0 text-accent' }) %>
+                                <%= extra %>
+                            </li>
+                        <% }) %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantie --------------------------------------------------------------->
+    <section id="garantie" class="relative overflow-hidden py-28 md:py-44">
+        <div class="absolute inset-0">
+            <video muted loop playsinline preload="none" data-lazy-video poster="<%= staticAsset('/images/optimized/blinking-poster-960.v1.jpg') %>" class="h-full w-full object-cover opacity-50" aria-hidden="true">
+                <source data-src="<%= staticAsset('/Videos/optimized/blinking-car-960.v1.mp4') %>" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/30"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-ink via-transparent to-ink"></div>
+        </div>
+
+        <div class="container relative z-10">
+            <div class="grid items-end gap-14 lg:grid-cols-12">
+                <div class="lg:col-span-6">
+                    <p class="eyebrow reveal mb-7">Garantie & Versicherung</p>
+                    <p class="reveal flex items-start font-display font-medium leading-[0.85] tracking-tightest text-bone" style="--d:1; font-size: clamp(7rem, 20vw, 15rem);">
+                        36<span class="ml-3 mt-4 font-serif text-[0.22em] font-normal italic leading-none tracking-normal text-accent-light md:mt-6">Monate</span>
+                    </p>
+                    <h2 class="heading reveal mt-6 max-w-lg" style="--d:2">Sicherheit, die <span class="serif-accent">mitfährt.</span></h2>
+                </div>
+                <div class="lg:col-span-5 lg:col-start-8">
+                    <p class="lead reveal" style="--d:2">
+                        Je nach Fahrzeug bieten wir Ihnen eine Gebrauchtwagen-Garantieversicherung bis zu 36 Monaten an – egal ob Kleinwagen, Luxuslimousine oder Allrad-Fahrzeug.
+                    </p>
+                    <div class="reveal mt-10 space-y-0" style="--d:3">
+                        <div class="flex gap-5 border-t border-white/10 py-5">
+                            <div class="icon-tile"><%- include('partials/icon', { name: 'gauge' }) %></div>
+                            <div>
+                                <p class="font-medium text-bone">Freie Werkstattwahl</p>
+                                <p class="mt-1 text-sm text-mute">Im Schadensfall sind Sie an keine Werkstatt gebunden.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 border-t border-white/10 py-5">
+                            <div class="icon-tile"><%- include('partials/icon', { name: 'clock' }) %></div>
+                            <div>
+                                <p class="font-medium text-bone">Schnelle Abwicklung</p>
+                                <p class="mt-1 text-sm text-mute">Unkompliziert und kundenindividuell – ohne lange Wartezeiten.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 border-y border-white/10 py-5">
+                            <div class="icon-tile"><%- include('partials/icon', { name: 'chat' }) %></div>
+                            <div>
+                                <p class="font-medium text-bone">Persönliche Beratung</p>
+                                <p class="mt-1 text-sm text-mute">Individuell und auf das jeweilige Fahrzeug bezogen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showroom --------------------------------------------------------------->
+    <section class="relative border-t border-white/[0.06] py-24 md:py-36">
+        <div class="container">
+            <div class="grid items-center gap-14 lg:grid-cols-12 lg:gap-20">
+                <div class="order-2 lg:order-1 lg:col-span-7">
+                    <div class="reveal media-frame aspect-[16/10]">
+                        <video muted loop playsinline preload="none" data-lazy-video poster="<%= staticAsset('/images/optimized/start-stop-poster-1280.v1.jpg') %>" aria-hidden="true">
+                            <source data-src="<%= staticAsset('/Videos/optimized/start-stop-1280.v1.mp4') %>" type="video/mp4">
+                        </video>
+                        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/60 to-transparent"></div>
+                        <p class="absolute bottom-5 left-6 text-xs uppercase tracking-[0.2em] text-bone/70">Showroom Impressionen</p>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 lg:col-span-5">
+                    <p class="eyebrow reveal mb-7">Qualität im Detail</p>
+                    <h2 class="heading reveal" style="--d:1">Qualität, die man <span class="serif-accent">sieht und spürt.</span></h2>
+                    <p class="lead reveal mt-7" style="--d:2">
+                        Unsere Fahrzeuge stehen für Präzision, Sorgfalt und hohen Anspruch – von der Verarbeitung bis zur Atmosphäre bei der Übergabe.
+                    </p>
+                    <div class="reveal mt-10" style="--d:3">
+                        <a href="/bestand" class="btn btn-light">
+                            Aktuelle Fahrzeuge entdecken
+                            <%- include('partials/icon', { name: 'arrow-up-right' }) %>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<%- include('partials/footer', { isHome: true }) %>
+
+</body>
+</html>

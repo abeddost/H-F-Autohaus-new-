@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:url" content="<%= canonicalUrl %>">
+    <meta property="og:locale" content="de_DE">
+    <%- include('partials/head-assets') %>
+</head>
+<body>
+<%- include('partials/nav', { active: 'ueber-uns' }) %>
+
+<main id="main">
+    <!-- Über uns --------------------------------------------------------------->
+    <section class="relative pb-24 pt-32 md:pb-36 md:pt-44">
+        <div class="container">
+            <div class="grid items-center gap-14 lg:grid-cols-12 lg:gap-20">
+                <div class="lg:col-span-6">
+                    <p class="eyebrow hero-enter mb-7">Über uns</p>
+                    <h1 class="heading reveal" style="--d:1">
+                        Fahrzeughandel, wie er sein sollte: <span class="serif-accent">ehrlich & persönlich.</span>
+                    </h1>
+                    <div class="reveal mt-9 space-y-5 text-[1.0625rem] leading-relaxed text-mute" style="--d:2">
+                        <p>
+                            Seit über sechs Jahren steht das <strong class="font-medium text-bone">H&amp;F Autohaus Bodenheim</strong> – auch bekannt als HF Autos – für zuverlässigen Service, faire Beratung und hochwertigen Fahrzeughandel in Mainz und Umgebung. Als freier Händler sind wir auf den An- und Verkauf von Gebrauchtwagen spezialisiert.
+                        </p>
+                        <p>
+                            Wir bedienen Kunden aus Mainz, Nierstein, Oppenheim, Ingelheim, Bingen und ganz Rheinhessen. Qualifizierte Beratung, faire Inzahlungnahmen und individuelle Finanzierungsangebote sorgen dafür, dass Sie genau das passende Fahrzeug finden.
+                        </p>
+                    </div>
+                    <div class="reveal mt-10 flex flex-wrap items-center gap-x-8 gap-y-4" style="--d:3">
+                        <a href="/kontakt" class="link-arrow">Besuchen Sie uns in Bodenheim <%- include('partials/icon', { name: 'arrow-up-right' }) %></a>
+                        <span class="text-sm text-faint">Vergleichen lohnt sich.</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="reveal relative" style="--d:1">
+                        <div class="media-frame aspect-[4/5] md:aspect-[5/4] lg:aspect-[4/5]">
+                            <picture>
+                                <source
+                                    srcset="<%= staticAsset('/images/optimized/sunset-sedan-960.v1.jpg') %> 960w, <%= staticAsset('/images/optimized/sunset-sedan-1536.v1.jpg') %> 1536w"
+                                    sizes="(min-width: 1024px) 50vw, 100vw">
+                                <img src="<%= staticAsset('/images/optimized/sunset-sedan-960.v1.jpg') %>" alt="Schwarze Oberklasse-Limousine im Abendlicht" loading="lazy" decoding="async" class="h-full w-full object-cover">
+                            </picture>
+                            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent"></div>
+                        </div>
+                        <div class="surface absolute -bottom-8 left-5 right-5 flex items-center gap-5 p-5 backdrop-blur-xl sm:left-auto sm:right-8 sm:w-80 md:-left-10 md:right-auto">
+                            <div class="icon-tile"><%- include('partials/icon', { name: 'pin' }) %></div>
+                            <div>
+                                <p class="text-sm font-medium text-bone">Am Kuemmerling 41a</p>
+                                <p class="text-sm text-mute">55294 Bodenheim</p>
+                                <p class="text-sm text-mute">Mo–Fr · 9–18 Uhr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-t border-white/[0.06] bg-ink-900 py-20 md:py-28">
+        <div class="container">
+            <div class="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4">
+                <div class="reveal"><p class="font-display text-3xl font-medium tracking-tight md:text-4xl">6+ Jahre</p><p class="mt-2 text-xs uppercase tracking-[0.16em] text-mute">Erfahrung im Fahrzeughandel</p></div>
+                <div class="reveal" style="--d:1"><p class="font-display text-3xl font-medium tracking-tight md:text-4xl">36 Monate</p><p class="mt-2 text-xs uppercase tracking-[0.16em] text-mute">Garantie möglich</p></div>
+                <div class="reveal" style="--d:2"><p class="font-display text-3xl font-medium tracking-tight md:text-4xl">Barzahlung</p><p class="mt-2 text-xs uppercase tracking-[0.16em] text-mute">beim Fahrzeugankauf</p></div>
+                <div class="reveal" style="--d:3"><p class="font-display text-3xl font-medium tracking-tight md:text-4xl">Finanzierung</p><p class="mt-2 text-xs uppercase tracking-[0.16em] text-mute">& Leasing</p></div>
+            </div>
+            <div class="reveal mt-16 flex flex-col gap-3 sm:flex-row">
+                <a href="/bestand" class="btn btn-primary">Fahrzeugbestand ansehen <%- include('partials/icon', { name: 'arrow-right', extra: 'arrow' }) %></a>
+                <a href="/kontakt" class="btn btn-ghost">Kontakt aufnehmen <%- include('partials/icon', { name: 'arrow-right', extra: 'arrow' }) %></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
+</body>
+</html>

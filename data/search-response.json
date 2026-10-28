@@ -1,0 +1,3244 @@
+{
+  "total": 22,
+  "currentPage": 1,
+  "maxPages": 1,
+  "pageSize": 22,
+  "ads": [
+    {
+      "mobileAdId": "49308478093408",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-06T17:53:25+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "OffRoad",
+      "make": "FORD",
+      "model": "Kuga",
+      "modelDescription": "Kuga Titanium/SHZ/PDC/MOTORSCHADEN",
+      "condition": "USED",
+      "firstRegistration": "201612",
+      "mileage": 174000,
+      "cubicCapacity": 1997,
+      "power": 110,
+      "gearbox": "MANUAL_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6",
+      "emissions": {
+        "combined": {
+          "co2": "135"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "5.2"
+        }
+      },
+      "exteriorColor": "BLUE",
+      "manufacturerColorName": "Indic-Blau Metallic",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "PARTIAL_LEATHER",
+      "numberOfPreviousOwners": 3,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": true,
+      "accidentDamaged": false,
+      "roadworthy": false,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "auxiliaryHeating": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_2_ZONES",
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "powerAssistedSteering": true,
+      "roofRails": true,
+      "sportPackage": true,
+      "sportSeats": true,
+      "tractionControlSystem": true,
+      "armRest": true,
+      "heatedWindshield": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "lumbarSupport": true,
+      "emergencyCallSystem": true,
+      "tirePressureMonitoring": true,
+      "voiceControl": true,
+      "usb": true,
+      "headlightWasherSystem": true,
+      "winterPackage": true,
+      "speedLimiter": true,
+      "collisionAvoidance": true,
+      "keylessEntry": true,
+      "driveType": "ALL_WHEEL",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "acaa266fae79ff898d78b00aa1301024",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/77/77cfbe05-584f-4438-9f2e-fc10fc572730?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/77/77cfbe05-584f-4438-9f2e-fc10fc572730?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/77/77cfbe05-584f-4438-9f2e-fc10fc572730?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/77/77cfbe05-584f-4438-9f2e-fc10fc572730?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/77/77cfbe05-584f-4438-9f2e-fc10fc572730?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/77/77cfbe05-584f-4438-9f2e-fc10fc572730?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/77/77cfbe05-584f-4438-9f2e-fc10fc572730?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "MOTORSCHADEN",
+        "NAVI / KLIMA",
+        "PDC / AHK-VORBEREITUNG"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/ford-kuga-titanium-shz-pdc-motorschaden-bodenheim/49308478093408.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "price": {
+        "consumerPriceGross": "4990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50858780164096",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T12:09:49+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "Van",
+      "make": "OPEL",
+      "model": "Zafira",
+      "modelDescription": "Zafira C Edition 7-SITZER/KAMERA/NAVI/Start/Stop",
+      "condition": "USED",
+      "firstRegistration": "201701",
+      "mileage": 150879,
+      "cubicCapacity": 1364,
+      "power": 103,
+      "gearbox": "MANUAL_GEAR",
+      "fuel": "PETROL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6",
+      "emissions": {
+        "combined": {
+          "co2": "143",
+          "co2Class": "A"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "6.2"
+        }
+      },
+      "exteriorColor": "GREY",
+      "manufacturerColorName": "YOU DRIVE ME CRAZY",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 7,
+      "interiorColor": "OTHER_INTERIOR_COLOR",
+      "interiorType": "FABRIC",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_2_ZONES",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "LED_RUNNING_LIGHTS",
+      "headlightType": "BI_XENON_HEADLIGHTS",
+      "bendingLightsType": "BENDING_LIGHTS",
+      "powerAssistedSteering": true,
+      "tractionControlSystem": true,
+      "armRest": true,
+      "heatedWindshield": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "lumbarSupport": true,
+      "emergencyCallSystem": true,
+      "tirePressureMonitoring": true,
+      "voiceControl": true,
+      "touchscreen": true,
+      "usb": true,
+      "highBeamAssist": true,
+      "summerTires": true,
+      "winterTires": true,
+      "headlightWasherSystem": true,
+      "winterPackage": true,
+      "dimmingInteriorMirror": true,
+      "collisionAvoidance": true,
+      "driveType": "FRONT",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "73709f6df20e3fdd612636e806b3d320",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/82/82da1914-d02e-4a11-8b52-04375fe59008?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/82/82da1914-d02e-4a11-8b52-04375fe59008?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/82/82da1914-d02e-4a11-8b52-04375fe59008?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/82/82da1914-d02e-4a11-8b52-04375fe59008?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/82/82da1914-d02e-4a11-8b52-04375fe59008?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/82/82da1914-d02e-4a11-8b52-04375fe59008?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/82/82da1914-d02e-4a11-8b52-04375fe59008?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "7-SITZER",
+        "KAMERA",
+        "NAVI"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/opel-zafira-c-edition-7-sitzer-kamera-navi-start-stop-bodenheim/50858780164096.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "7900.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50860448278528",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T12:23:23+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "OffRoad",
+      "make": "NISSAN",
+      "model": "Qashqai",
+      "modelDescription": "Qashqai Acenta/PDC/SHZ/TÜV NEU",
+      "condition": "USED",
+      "firstRegistration": "201709",
+      "mileage": 48077,
+      "cubicCapacity": 1197,
+      "power": 85,
+      "gearbox": "MANUAL_GEAR",
+      "fuel": "PETROL",
+      "e10Enabled": false,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6",
+      "emissions": {
+        "combined": {
+          "co2": "129"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "5.6"
+        }
+      },
+      "exteriorColor": "GREY",
+      "manufacturerColorName": "GUN METALLIC (M)",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "FABRIC",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 3,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_2_ZONES",
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "TUNER"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "powerAssistedSteering": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "lumbarSupport": true,
+      "tirePressureMonitoring": true,
+      "usb": true,
+      "trafficSignRecognition": true,
+      "highBeamAssist": true,
+      "ambientLighting": true,
+      "dimmingInteriorMirror": true,
+      "collisionAvoidance": true,
+      "laneDepartureWarning": true,
+      "driveType": "FRONT",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "85347df0308ca71d3c0b2583a0528230",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e20adb82-5116-410b-9632-9b4a3eef5ac4?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e20adb82-5116-410b-9632-9b4a3eef5ac4?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e20adb82-5116-410b-9632-9b4a3eef5ac4?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e20adb82-5116-410b-9632-9b4a3eef5ac4?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e20adb82-5116-410b-9632-9b4a3eef5ac4?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e20adb82-5116-410b-9632-9b4a3eef5ac4?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/e2/e20adb82-5116-410b-9632-9b4a3eef5ac4?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "PDC",
+        "SCHECKHEFTGEPFLEGT",
+        "WENIGE KILOMETER"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/nissan-qashqai-acenta-pdc-shz-t%C3%BCv-neu-bodenheim/50860448278528.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "11990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50861281765216",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T12:30:10+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "Van",
+      "make": "MERCEDES-BENZ",
+      "model": "Vito",
+      "modelDescription": "Vito Mixto CDI RWD/KAMERA/ANHÄNGERKUPPLUNG/NAVI",
+      "condition": "USED",
+      "firstRegistration": "202102",
+      "mileage": 224123,
+      "cubicCapacity": 1950,
+      "power": 100,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6D_TEMP",
+      "emissions": {
+        "combined": {
+          "co2": "154"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "5.8"
+        }
+      },
+      "exteriorColor": "BLACK",
+      "manufacturerColorName": "obsidianschwarz metallic",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 6,
+      "interiorColor": "BLACK",
+      "interiorType": "LEATHER",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 1,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_4_ZONES",
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "slidingDoorType": "SLIDING_DOOR_RIGHT",
+      "bendingLightsType": "BENDING_LIGHTS",
+      "trailerCouplingType": "TRAILER_COUPLING_FIX",
+      "powerAssistedSteering": true,
+      "roofRails": true,
+      "tractionControlSystem": true,
+      "armRest": true,
+      "heatedWindshield": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "lumbarSupport": true,
+      "fatigueWarningSystem": true,
+      "emergencyCallSystem": true,
+      "paddleShifters": true,
+      "voiceControl": true,
+      "touchscreen": true,
+      "usb": true,
+      "highBeamAssist": true,
+      "allSeasonTires": true,
+      "carplay": true,
+      "cargoBarrier": true,
+      "speedLimiter": true,
+      "collisionAvoidance": true,
+      "driveType": "REAR",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "bfd321ef67a28af385bf72b7d1b8edaf",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/be/beb4d200-1b6a-4f15-acf7-cb7edbdbbaed?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/be/beb4d200-1b6a-4f15-acf7-cb7edbdbbaed?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/be/beb4d200-1b6a-4f15-acf7-cb7edbdbbaed?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/be/beb4d200-1b6a-4f15-acf7-cb7edbdbbaed?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/be/beb4d200-1b6a-4f15-acf7-cb7edbdbbaed?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/be/beb4d200-1b6a-4f15-acf7-cb7edbdbbaed?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/be/beb4d200-1b6a-4f15-acf7-cb7edbdbbaed?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "ANHÄNGERKUPPLUNG",
+        "LKW-ZULASSUNG",
+        "NAVI/KAMERA"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/mercedes-benz-vito-mixto-cdi-rwd-kamera-anh%C3%A4ngerkupplung-navi-bodenheim/50861281765216.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "price": {
+        "consumerPriceGross": "21900.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50862216404192",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T12:37:46+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "SportsCar",
+      "make": "MERCEDES-BENZ",
+      "model": "C 250",
+      "modelDescription": "Coupe C 250 CDI BlueEfficiency/NAVIGATION/PTS",
+      "condition": "USED",
+      "firstRegistration": "201209",
+      "mileage": 165797,
+      "cubicCapacity": 2143,
+      "power": 150,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO5",
+      "emissions": {
+        "combined": {
+          "co2": "130"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "4.9"
+        }
+      },
+      "exteriorColor": "BLACK",
+      "manufacturerColorName": "OBSIDIANSCHWARZ",
+      "metallic": true,
+      "doors": "TWO_OR_THREE",
+      "seats": 4,
+      "interiorColor": "BLACK",
+      "interiorType": "PARTIAL_LEATHER",
+      "newHuAu": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_2_ZONES",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "TUNER"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "powerAssistedSteering": true,
+      "tractionControlSystem": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "tirePressureMonitoring": true,
+      "smokersPackage": true,
+      "collisionAvoidance": true,
+      "driveType": "REAR",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "c736f0848a59e863496e847bfcb75077",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce721b8-7ca3-4ddb-8280-3a1b477591cf?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce721b8-7ca3-4ddb-8280-3a1b477591cf?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce721b8-7ca3-4ddb-8280-3a1b477591cf?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce721b8-7ca3-4ddb-8280-3a1b477591cf?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce721b8-7ca3-4ddb-8280-3a1b477591cf?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce721b8-7ca3-4ddb-8280-3a1b477591cf?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce721b8-7ca3-4ddb-8280-3a1b477591cf?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "NAVIGATION",
+        "PARKTRONIC-SYSTEM PTS",
+        "RAUCHER-PAKET"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/mercedes-benz-c-250-coupe-c-250-cdi-blueefficiency-navigation-pts-bodenheim/50862216404192.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "price": {
+        "consumerPriceGross": "11990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50863904396512",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T12:51:31+02:00",
+      "modificationDate": "2026-10-28T17:27:44+01:00",
+      "vehicleClass": "Car",
+      "category": "EstateCar",
+      "make": "MERCEDES-BENZ",
+      "model": "CLA Shooting Brake",
+      "modelDescription": "CLA 250e Shooting Brake/360°KAMERA/NAVI/19% MwSt",
+      "condition": "USED",
+      "firstRegistration": "202212",
+      "mileage": 50941,
+      "cubicCapacity": 1332,
+      "power": 118,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "HYBRID",
+      "e10Enabled": false,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6D_TEMP",
+      "emissions": {
+        "combined": {}
+      },
+      "consumptions": {
+        "fuel": {}
+      },
+      "exteriorColor": "WHITE",
+      "manufacturerColorName": "POLARWEISS",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "LEATHER",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION",
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "AUTOMATIC_PARKING",
+        "FRONT_SENSORS",
+        "CAM_360_DEGREES",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "ADAPTIVE_CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO",
+        "TUNER"
+      ],
+      "daytimeRunningLamps": "LED_RUNNING_LIGHTS",
+      "headlightType": "LED_HEADLIGHTS",
+      "bendingLightsType": "BENDING_LIGHTS",
+      "breakdownService": "REPAIR_KIT",
+      "powerAssistedSteering": true,
+      "sportSeats": true,
+      "tractionControlSystem": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "electricTailgate": true,
+      "leatherSteeringWheel": true,
+      "lumbarSupport": true,
+      "emergencyCallSystem": true,
+      "tirePressureMonitoring": true,
+      "paddleShifters": true,
+      "voiceControl": true,
+      "touchscreen": true,
+      "usb": true,
+      "trafficSignRecognition": true,
+      "highBeamAssist": true,
+      "allSeasonTires": true,
+      "headlightWasherSystem": true,
+      "winterPackage": true,
+      "distanceWarningSystem": true,
+      "ambientLighting": true,
+      "carplay": true,
+      "digitalCockpit": true,
+      "cargoBarrier": true,
+      "speedLimiter": true,
+      "collisionAvoidance": true,
+      "keylessEntry": true,
+      "laneDepartureWarning": true,
+      "blindSpotMonitor": true,
+      "driveType": "FRONT",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "d73924e0851fb79a413db3734740cf50",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d5e968-197c-45e6-91e5-e3602cae240b?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d5e968-197c-45e6-91e5-e3602cae240b?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d5e968-197c-45e6-91e5-e3602cae240b?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d5e968-197c-45e6-91e5-e3602cae240b?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d5e968-197c-45e6-91e5-e3602cae240b?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d5e968-197c-45e6-91e5-e3602cae240b?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9d5e968-197c-45e6-91e5-e3602cae240b?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "360°KAMERA",
+        "WIDESCREEN",
+        "19%MwSt. ausweisbar"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/mercedes-benz-cla-shooting-brake-cla-250e-shooting-brake-360-kamera-navi-19-mwst-bodenheim/50863904396512.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "23990.00",
+        "consumerPriceNet": "20159.66",
+        "vatRate": "19.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50865140896352",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T13:01:35+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "OffRoad",
+      "make": "LAND ROVER",
+      "model": "Range Rover Velar",
+      "modelDescription": "Range Rover Velar S/NAVI/LEDER/MOTORPROBLEM",
+      "condition": "USED",
+      "firstRegistration": "201802",
+      "mileage": 223120,
+      "cubicCapacity": 1999,
+      "power": 132,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6",
+      "emissions": {
+        "combined": {
+          "co2": "142",
+          "co2Class": "A"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "5.4"
+        }
+      },
+      "exteriorColor": "GREY",
+      "manufacturerColorName": "Silicon Silver",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "LEATHER",
+      "generalInspection": "202706",
+      "numberOfPreviousOwners": 2,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": true,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_2_ZONES",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "isofix": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "panoramicGlassRoof": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "LED_RUNNING_LIGHTS",
+      "headlightType": "LED_HEADLIGHTS",
+      "bendingLightsType": "ADAPTIVE_BENDING_LIGHTS",
+      "breakdownService": "REPAIR_KIT",
+      "trailerCouplingType": "TRAILER_COUPLING_FIX",
+      "powerAssistedSteering": true,
+      "roofRails": true,
+      "sportSeats": true,
+      "tractionControlSystem": true,
+      "alarmSystem": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "electricTailgate": true,
+      "leatherSteeringWheel": true,
+      "fatigueWarningSystem": true,
+      "nightVisionAssist": true,
+      "tirePressureMonitoring": true,
+      "paddleShifters": true,
+      "soundSystem": true,
+      "touchscreen": true,
+      "usb": true,
+      "trafficSignRecognition": true,
+      "highBeamAssist": true,
+      "winterTires": true,
+      "glareFreeHighBeam": true,
+      "headlightWasherSystem": true,
+      "winterPackage": true,
+      "distanceWarningSystem": true,
+      "carplay": true,
+      "androidAuto": true,
+      "dimmingInteriorMirror": true,
+      "cargoBarrier": true,
+      "keylessEntry": true,
+      "driveType": "ALL_WHEEL",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "f769c9bba13688ee93f9051ba0a7c5c4",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/df/dfd80ca2-199d-4fb5-b1ee-a3673b8d8955?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/df/dfd80ca2-199d-4fb5-b1ee-a3673b8d8955?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/df/dfd80ca2-199d-4fb5-b1ee-a3673b8d8955?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/df/dfd80ca2-199d-4fb5-b1ee-a3673b8d8955?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/df/dfd80ca2-199d-4fb5-b1ee-a3673b8d8955?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/df/dfd80ca2-199d-4fb5-b1ee-a3673b8d8955?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/df/dfd80ca2-199d-4fb5-b1ee-a3673b8d8955?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "NAVIGATION",
+        "MOTOR PROBLEM",
+        "VOLLLEDER"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/land-rover-range-rover-velar-s-navi-leder-motorproblem-bodenheim/50865140896352.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "price": {
+        "consumerPriceGross": "9990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50866855060064",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T13:15:31+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "OffRoad",
+      "make": "SKODA",
+      "model": "Kodiaq",
+      "modelDescription": "Kodiaq Style 4x4/KAMERA/NAVIGATION/Apple CarPlay",
+      "condition": "USED",
+      "firstRegistration": "201812",
+      "mileage": 148627,
+      "cubicCapacity": 1968,
+      "power": 140,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6D_TEMP",
+      "emissions": {
+        "combined": {
+          "co2": "151"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "5.7"
+        }
+      },
+      "exteriorColor": "BLACK",
+      "manufacturerColorName": "CERNA MAGIC/BLACK MAGIC",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "FABRIC",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_3_ZONES",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "headlightType": "LED_HEADLIGHTS",
+      "powerAssistedSteering": true,
+      "roofRails": true,
+      "skiBag": true,
+      "tractionControlSystem": true,
+      "armRest": true,
+      "heatedWindshield": true,
+      "hillStartAssist": true,
+      "electricTailgate": true,
+      "leatherSteeringWheel": true,
+      "fatigueWarningSystem": true,
+      "emergencyCallSystem": true,
+      "tirePressureMonitoring": true,
+      "paddleShifters": true,
+      "voiceControl": true,
+      "touchscreen": true,
+      "usb": true,
+      "trafficSignRecognition": true,
+      "highBeamAssist": true,
+      "headlightWasherSystem": true,
+      "distanceWarningSystem": true,
+      "wifiHotspot": true,
+      "carplay": true,
+      "androidAuto": true,
+      "dimmingInteriorMirror": true,
+      "cargoBarrier": true,
+      "speedLimiter": true,
+      "collisionAvoidance": true,
+      "keylessEntry": true,
+      "laneDepartureWarning": true,
+      "driveType": "ALL_WHEEL",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "0cf4a8a03d427e226bc356eb281395f3",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/81/816e414b-7750-4a5f-8de9-dfa31d8da942?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/81/816e414b-7750-4a5f-8de9-dfa31d8da942?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/81/816e414b-7750-4a5f-8de9-dfa31d8da942?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/81/816e414b-7750-4a5f-8de9-dfa31d8da942?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/81/816e414b-7750-4a5f-8de9-dfa31d8da942?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/81/816e414b-7750-4a5f-8de9-dfa31d8da942?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/81/816e414b-7750-4a5f-8de9-dfa31d8da942?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "KAMERA",
+        "NAVIGATION",
+        "Apple CarPlay/Android"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/skoda-kodiaq-style-4x4-kamera-navigation-apple-carplay-bodenheim/50866855060064.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "19990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50867394720992",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T13:19:55+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "OffRoad",
+      "make": "LAND ROVER",
+      "model": "Range Rover Velar",
+      "modelDescription": "Range Rover Velar R-Dynamic/KAMERA/PANO/TÜV NEU",
+      "condition": "USED",
+      "firstRegistration": "202009",
+      "mileage": 143000,
+      "cubicCapacity": 1999,
+      "power": 132,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6D",
+      "emissions": {
+        "combined": {
+          "co2": "152",
+          "co2Class": "A"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "5.8"
+        }
+      },
+      "exteriorColor": "SILVER",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "ALCANTARA",
+      "newHuAu": true,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_2_ZONES",
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "panoramicGlassRoof": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "ADAPTIVE_CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "LED_RUNNING_LIGHTS",
+      "headlightType": "LED_HEADLIGHTS",
+      "breakdownService": "REPAIR_KIT",
+      "powerAssistedSteering": true,
+      "sportSeats": true,
+      "sunroof": true,
+      "tractionControlSystem": true,
+      "alarmSystem": true,
+      "armRest": true,
+      "heatedWindshield": true,
+      "hillStartAssist": true,
+      "electricTailgate": true,
+      "leatherSteeringWheel": true,
+      "lumbarSupport": true,
+      "fatigueWarningSystem": true,
+      "emergencyCallSystem": true,
+      "tirePressureMonitoring": true,
+      "paddleShifters": true,
+      "soundSystem": true,
+      "voiceControl": true,
+      "touchscreen": true,
+      "usb": true,
+      "trafficSignRecognition": true,
+      "highBeamAssist": true,
+      "summerTires": true,
+      "distanceWarningSystem": true,
+      "ambientLighting": true,
+      "carplay": true,
+      "androidAuto": true,
+      "digitalCockpit": true,
+      "integratedMusicStreaming": true,
+      "dimmingInteriorMirror": true,
+      "speedLimiter": true,
+      "collisionAvoidance": true,
+      "keylessEntry": true,
+      "laneDepartureWarning": true,
+      "blindSpotMonitor": true,
+      "driveType": "ALL_WHEEL",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "abbbbb45347c9110c8203343df0549fe",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/51/51f3abbc-b135-46bc-afd6-d82a6c6791a1?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/51/51f3abbc-b135-46bc-afd6-d82a6c6791a1?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/51/51f3abbc-b135-46bc-afd6-d82a6c6791a1?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/51/51f3abbc-b135-46bc-afd6-d82a6c6791a1?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/51/51f3abbc-b135-46bc-afd6-d82a6c6791a1?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/51/51f3abbc-b135-46bc-afd6-d82a6c6791a1?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/51/51f3abbc-b135-46bc-afd6-d82a6c6791a1?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "PANORAMA-SCHIEBEDACH",
+        "TÜV NEU",
+        "RÜCKFAHRKAMERA"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/land-rover-range-rover-velar-r-dynamic-kamera-pano-t%C3%BCv-neu-bodenheim/50867394720992.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "price": {
+        "consumerPriceGross": "24900.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50868842914400",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T13:31:42+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "OffRoad",
+      "make": "LAND ROVER",
+      "model": "Defender",
+      "modelDescription": "Defender D240 S AWD/7 SITZER/PANO/AHK/MERIDIAN",
+      "condition": "USED",
+      "firstRegistration": "202009",
+      "mileage": 113000,
+      "cubicCapacity": 1999,
+      "power": 177,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "performanceHandlingSystem": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6D_TEMP",
+      "emissions": {
+        "combined": {
+          "co2": "234"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "10.2"
+        }
+      },
+      "exteriorColor": "GREY",
+      "manufacturerColorName": "hellgrau",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 7,
+      "interiorColor": "BLACK",
+      "interiorType": "LEATHER",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 1,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "airSuspension": true,
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdMultichanger": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_4_ZONES",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "panoramicGlassRoof": true,
+      "parkingAssistants": [
+        "AUTOMATIC_PARKING",
+        "FRONT_SENSORS",
+        "CAM_360_DEGREES",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "ADAPTIVE_CRUISE_CONTROL",
+      "radio": [
+        "TUNER"
+      ],
+      "daytimeRunningLamps": "LED_RUNNING_LIGHTS",
+      "headlightType": "LED_HEADLIGHTS",
+      "bendingLightsType": "BENDING_LIGHTS",
+      "breakdownService": "REPAIR_KIT",
+      "trailerCouplingType": "TRAILER_COUPLING_FIX",
+      "powerAssistedSteering": true,
+      "sportPackage": true,
+      "sportSeats": true,
+      "sunroof": true,
+      "tractionControlSystem": true,
+      "alarmSystem": true,
+      "armRest": true,
+      "heatedWindshield": true,
+      "heatedSteeringWheel": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "lumbarSupport": true,
+      "fatigueWarningSystem": true,
+      "nightVisionAssist": true,
+      "emergencyCallSystem": true,
+      "tirePressureMonitoring": true,
+      "electricHeatedRearSeats": true,
+      "soundSystem": true,
+      "voiceControl": true,
+      "touchscreen": true,
+      "usb": true,
+      "trafficSignRecognition": true,
+      "highBeamAssist": true,
+      "allSeasonTires": true,
+      "distanceWarningSystem": true,
+      "ambientLighting": true,
+      "wifiHotspot": true,
+      "carplay": true,
+      "androidAuto": true,
+      "digitalCockpit": true,
+      "wirelessCharging": true,
+      "dimmingInteriorMirror": true,
+      "cargoBarrier": true,
+      "speedLimiter": true,
+      "keylessEntry": true,
+      "laneDepartureWarning": true,
+      "driveType": "ALL_WHEEL",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "5b3c6aea12aaa2db0a4990974af08fc5",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/22/22c467db-a00d-4727-bfd3-fc3204a5eaf4?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/22/22c467db-a00d-4727-bfd3-fc3204a5eaf4?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/22/22c467db-a00d-4727-bfd3-fc3204a5eaf4?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/22/22c467db-a00d-4727-bfd3-fc3204a5eaf4?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/22/22c467db-a00d-4727-bfd3-fc3204a5eaf4?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/22/22c467db-a00d-4727-bfd3-fc3204a5eaf4?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/22/22c467db-a00d-4727-bfd3-fc3204a5eaf4?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "AHK / PANORAMA",
+        "360°KAMERA / 7-SITZER",
+        "FAHRASSISTEN-SYSTEM"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/land-rover-defender-d240-s-awd-7-sitzer-pano-ahk-meridian-bodenheim/50868842914400.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "43900.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50871785646688",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T13:55:39+02:00",
+      "modificationDate": "2026-10-28T17:27:44+01:00",
+      "vehicleClass": "Car",
+      "category": "OffRoad",
+      "make": "JEEP",
+      "model": "Renegade",
+      "modelDescription": "Renegade Longitude FWD/1.HAND/PDC/NAVI/TÜV NEU",
+      "condition": "USED",
+      "firstRegistration": "201612",
+      "mileage": 99231,
+      "cubicCapacity": 1368,
+      "power": 103,
+      "gearbox": "MANUAL_GEAR",
+      "fuel": "PETROL",
+      "e10Enabled": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6",
+      "emissions": {
+        "combined": {
+          "co2": "142",
+          "co2Class": "A"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "6"
+        }
+      },
+      "exteriorColor": "BLACK",
+      "manufacturerColorName": "GRANITE CRYSTAL",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "FABRIC",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 1,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "bluetooth": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "bendingLightsType": "BENDING_LIGHTS",
+      "powerAssistedSteering": true,
+      "roofRails": true,
+      "tractionControlSystem": true,
+      "armRest": true,
+      "heatedWindshield": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "fatigueWarningSystem": true,
+      "tirePressureMonitoring": true,
+      "usb": true,
+      "trafficSignRecognition": true,
+      "summerTires": true,
+      "winterTires": true,
+      "winterPackage": true,
+      "ambientLighting": true,
+      "dimmingInteriorMirror": true,
+      "collisionAvoidance": true,
+      "keylessEntry": true,
+      "driveType": "FRONT",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "1068f89f35f1396a1eea22d5e282f7d1",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/82/825a3513-a0bb-43c8-a75c-c98b3999d613?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/82/825a3513-a0bb-43c8-a75c-c98b3999d613?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/82/825a3513-a0bb-43c8-a75c-c98b3999d613?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/82/825a3513-a0bb-43c8-a75c-c98b3999d613?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/82/825a3513-a0bb-43c8-a75c-c98b3999d613?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/82/825a3513-a0bb-43c8-a75c-c98b3999d613?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/82/825a3513-a0bb-43c8-a75c-c98b3999d613?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "SCHECKHEFTGEPFLEGT",
+        "1. HAND / TÜV NEU",
+        "PDC / NAVI"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/jeep-renegade-longitude-fwd-1-hand-pdc-navi-t%C3%BCv-neu-bodenheim/50871785646688.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "9990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50873866051680",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T14:12:35+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "SportsCar",
+      "make": "FORD",
+      "model": "Mustang",
+      "modelDescription": "Mustang Coupe/Automatik/TÜV NEU/BLUETOOTH",
+      "condition": "USED",
+      "firstRegistration": "201107",
+      "mileage": 85295,
+      "cubicCapacity": 3731,
+      "power": 227,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "PETROL",
+      "e10Enabled": false,
+      "performanceHandlingSystem": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO5",
+      "emissions": {
+        "combined": {
+          "co2Class": "A"
+        }
+      },
+      "consumptions": {
+        "fuel": {}
+      },
+      "exteriorColor": "RED",
+      "manufacturerColorName": "DUNKEL ROT ",
+      "metallic": true,
+      "doors": "TWO_OR_THREE",
+      "seats": 4,
+      "interiorColor": "BLACK",
+      "interiorType": "LEATHER",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "nonSmokerVehicle": true,
+      "countryVersion": "US",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AIRBAGS",
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "multifunctionalWheel": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "LED_RUNNING_LIGHTS",
+      "headlightType": "XENON_HEADLIGHTS",
+      "breakdownService": "REPAIR_KIT",
+      "sportPackage": true,
+      "sportSeats": true,
+      "alarmSystem": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "electricTailgate": true,
+      "leatherSteeringWheel": true,
+      "lumbarSupport": true,
+      "tirePressureMonitoring": true,
+      "paddleShifters": true,
+      "soundSystem": true,
+      "voiceControl": true,
+      "summerTires": true,
+      "headlightWasherSystem": true,
+      "cargoBarrier": true,
+      "driveType": "FRONT",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "b31ad91adb5793d0e9c40868a6b65532",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/73/73d91e25-2f84-48a4-bbeb-5bdec5d3adfb?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/73/73d91e25-2f84-48a4-bbeb-5bdec5d3adfb?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/73/73d91e25-2f84-48a4-bbeb-5bdec5d3adfb?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/73/73d91e25-2f84-48a4-bbeb-5bdec5d3adfb?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/73/73d91e25-2f84-48a4-bbeb-5bdec5d3adfb?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/73/73d91e25-2f84-48a4-bbeb-5bdec5d3adfb?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/73/73d91e25-2f84-48a4-bbeb-5bdec5d3adfb?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "WENIG KILOMETER ",
+        "TÜV NEU ",
+        "BLUETOOTH"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/ford-mustang-coupe-automatik-t%C3%BCv-neu-bluetooth-bodenheim/50873866051680.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "17990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50875491612672",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T14:25:49+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "SportsCar",
+      "make": "DODGE",
+      "model": "Challenger",
+      "modelDescription": "Challenger 6.1 V8 SRT-8/NAVI/PDC/UNFALLFREI",
+      "condition": "USED",
+      "firstRegistration": "201106",
+      "mileage": 119700,
+      "cubicCapacity": 6059,
+      "power": 318,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "PETROL",
+      "e10Enabled": false,
+      "performanceHandlingSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO4",
+      "emissions": {
+        "combined": {}
+      },
+      "consumptions": {
+        "fuel": {}
+      },
+      "exteriorColor": "BLACK",
+      "manufacturerColorName": "Schwarz",
+      "metallic": true,
+      "doors": "TWO_OR_THREE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "PARTIAL_LEATHER",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "US",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_4_ZONES",
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "isofix": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "TUNER"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "headlightType": "XENON_HEADLIGHTS",
+      "powerAssistedSteering": true,
+      "sportPackage": true,
+      "sportSeats": true,
+      "sunroof": true,
+      "tractionControlSystem": true,
+      "alarmSystem": true,
+      "armRest": true,
+      "heatedWindshield": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "lumbarSupport": true,
+      "tirePressureMonitoring": true,
+      "soundSystem": true,
+      "voiceControl": true,
+      "touchscreen": true,
+      "usb": true,
+      "highBeamAssist": true,
+      "summerTires": true,
+      "cargoBarrier": true,
+      "driveType": "REAR",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "7193cdea35a58752b724e0d028a60260",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/35/355f71cf-7b76-4af2-9866-16c82127d54f?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/35/355f71cf-7b76-4af2-9866-16c82127d54f?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/35/355f71cf-7b76-4af2-9866-16c82127d54f?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/35/355f71cf-7b76-4af2-9866-16c82127d54f?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/35/355f71cf-7b76-4af2-9866-16c82127d54f?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/35/355f71cf-7b76-4af2-9866-16c82127d54f?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/35/355f71cf-7b76-4af2-9866-16c82127d54f?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "V8 HEMI",
+        "NAVIGATION",
+        "PDC"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/dodge-challenger-6-1-v8-srt-8-navi-pdc-unfallfrei-bodenheim/50875491612672.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "price": {
+        "consumerPriceGross": "23990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50893203495968",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T16:49:57+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "Limousine",
+      "make": "PEUGEOT",
+      "model": "208",
+      "modelDescription": "208 Allure Pack/KAMERA/NAVI/TÜV NEU/BLUETOOTH",
+      "condition": "USED",
+      "firstRegistration": "202106",
+      "mileage": 81093,
+      "cubicCapacity": 1199,
+      "power": 74,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "PETROL",
+      "e10Enabled": false,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6D",
+      "emissions": {
+        "combined": {
+          "co2": "99"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "4.3"
+        }
+      },
+      "exteriorColor": "BLACK",
+      "manufacturerColorName": "LACKIERUNG SCHWARZ PERLA NERA/TY",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "GREY",
+      "interiorType": "FABRIC",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION",
+      "electricExteriorMirrors": true,
+      "electricWindows": true,
+      "esp": true,
+      "handsFreePhoneSystem": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "headlightType": "LED_HEADLIGHTS",
+      "powerAssistedSteering": true,
+      "sportPackage": true,
+      "tractionControlSystem": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "fatigueWarningSystem": true,
+      "emergencyCallSystem": true,
+      "tirePressureMonitoring": true,
+      "paddleShifters": true,
+      "soundSystem": true,
+      "touchscreen": true,
+      "usb": true,
+      "trafficSignRecognition": true,
+      "dimmingInteriorMirror": true,
+      "collisionAvoidance": true,
+      "keylessEntry": true,
+      "laneDepartureWarning": true,
+      "driveType": "FRONT",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "da3a0d06a5dc687c4570c6b7268e333a",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7c90c4d-c13d-46a2-b11c-86d43a67eae2?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7c90c4d-c13d-46a2-b11c-86d43a67eae2?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7c90c4d-c13d-46a2-b11c-86d43a67eae2?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7c90c4d-c13d-46a2-b11c-86d43a67eae2?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7c90c4d-c13d-46a2-b11c-86d43a67eae2?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7c90c4d-c13d-46a2-b11c-86d43a67eae2?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/d7/d7c90c4d-c13d-46a2-b11c-86d43a67eae2?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "RÜCKFAHRKAMERA",
+        "NAVI / BLUETOOTH ",
+        "TÜV NEU"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/peugeot-208-allure-pack-kamera-navi-t%C3%BCv-neu-bluetooth-bodenheim/50893203495968.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "14990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "50893770012768",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-15T16:54:34+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "OffRoad",
+      "make": "CITROEN",
+      "model": "C3",
+      "modelDescription": "C3 Aircross Shine/KAMERA/NAVI/PANORAMA/TÜV NEU",
+      "condition": "USED",
+      "firstRegistration": "201010",
+      "mileage": 77315,
+      "cubicCapacity": 1199,
+      "power": 96,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "PETROL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6D",
+      "emissions": {
+        "combined": {
+          "co2": "114"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "5"
+        }
+      },
+      "exteriorColor": "BLACK",
+      "manufacturerColorName": "LACKIERUNG SCHWARZ PERLA NERA/TY",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "FABRIC",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "nonSmokerVehicle": true,
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION",
+      "electricExteriorMirrors": true,
+      "electricWindows": true,
+      "esp": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "panoramicGlassRoof": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "AUTOMATIC_PARKING",
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "LED_RUNNING_LIGHTS",
+      "bendingLightsType": "BENDING_LIGHTS",
+      "powerAssistedSteering": true,
+      "roofRails": true,
+      "sunroof": true,
+      "tractionControlSystem": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "fatigueWarningSystem": true,
+      "emergencyCallSystem": true,
+      "tirePressureMonitoring": true,
+      "touchscreen": true,
+      "usb": true,
+      "trafficSignRecognition": true,
+      "highBeamAssist": true,
+      "distanceWarningSystem": true,
+      "collisionAvoidance": true,
+      "laneDepartureWarning": true,
+      "blindSpotMonitor": true,
+      "driveType": "FRONT",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "de1c3eb0931dccff5d43c2c61ca7ab82",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f0dc3d9-2d16-46f7-97d7-9fbc4f8d5bc3?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f0dc3d9-2d16-46f7-97d7-9fbc4f8d5bc3?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f0dc3d9-2d16-46f7-97d7-9fbc4f8d5bc3?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f0dc3d9-2d16-46f7-97d7-9fbc4f8d5bc3?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f0dc3d9-2d16-46f7-97d7-9fbc4f8d5bc3?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f0dc3d9-2d16-46f7-97d7-9fbc4f8d5bc3?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f0dc3d9-2d16-46f7-97d7-9fbc4f8d5bc3?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "TÜV NEU ",
+        "PANORAMA / NAVI",
+        "RÜCKFAHRKAMERA"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/citroen-c3-aircross-shine-kamera-navi-panorama-t%C3%BCv-neu-bodenheim/50893770012768.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "13900.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "51082296155392",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-16T18:28:47+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "Van",
+      "make": "MERCEDES-BENZ",
+      "model": "Vito",
+      "modelDescription": "Vito Kasten 110/114/116/119 CDI RWD/AHK/KAMERA",
+      "condition": "USED",
+      "firstRegistration": "202202",
+      "mileage": 99331,
+      "cubicCapacity": 1950,
+      "power": 120,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6D_TEMP",
+      "emissions": {
+        "combined": {
+          "co2": "154"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "5.8"
+        }
+      },
+      "exteriorColor": "WHITE",
+      "metallic": true,
+      "doors": "TWO_OR_THREE",
+      "seats": 3,
+      "interiorColor": "BLACK",
+      "interiorType": "FABRIC",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AIRBAGS",
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "centralLocking": true,
+      "climatisation": "MANUAL_CLIMATISATION",
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "slidingDoorType": "SLIDING_DOOR_RIGHT",
+      "trailerCouplingType": "TRAILER_COUPLING_FIX",
+      "powerAssistedSteering": true,
+      "roofRails": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "fatigueWarningSystem": true,
+      "emergencyCallSystem": true,
+      "paddleShifters": true,
+      "voiceControl": true,
+      "usb": true,
+      "speedLimiter": true,
+      "collisionAvoidance": true,
+      "driveType": "REAR",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "fb2150c126887df8964b4ebe46f50e06",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3dd1b32-8b20-4e7e-b627-39de786e8d09?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3dd1b32-8b20-4e7e-b627-39de786e8d09?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3dd1b32-8b20-4e7e-b627-39de786e8d09?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3dd1b32-8b20-4e7e-b627-39de786e8d09?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3dd1b32-8b20-4e7e-b627-39de786e8d09?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3dd1b32-8b20-4e7e-b627-39de786e8d09?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3dd1b32-8b20-4e7e-b627-39de786e8d09?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "KAMERA / PTS",
+        "ANHÄNGERKUPPLUNG",
+        "TÜV NEU"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/mercedes-benz-vito-kasten-110-114-116-119-cdi-rwd-ahk-kamera-bodenheim/51082296155392.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-16T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "25900.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "51772052301664",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-20T16:02:02+02:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "Limousine",
+      "make": "MERCEDES-BENZ",
+      "model": "C 180",
+      "modelDescription": "C 180 CGI Limousine/NAVI/SZH/TÜV NEU",
+      "condition": "USED",
+      "firstRegistration": "201805",
+      "mileage": 35234,
+      "cubicCapacity": 1595,
+      "power": 115,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "PETROL",
+      "e10Enabled": false,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6D_TEMP",
+      "emissions": {
+        "combined": {
+          "co2": "141"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "6.2"
+        }
+      },
+      "exteriorColor": "BLACK",
+      "manufacturerColorName": "OBSIDIANSCHWARZ",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "PARTIAL_LEATHER",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_2_ZONES",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "AUTOMATIC_PARKING",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "ADAPTIVE_CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "LED_RUNNING_LIGHTS",
+      "headlightType": "LED_HEADLIGHTS",
+      "powerAssistedSteering": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "lumbarSupport": true,
+      "fatigueWarningSystem": true,
+      "emergencyCallSystem": true,
+      "tirePressureMonitoring": true,
+      "highBeamAssist": true,
+      "summerTires": true,
+      "winterTires": true,
+      "distanceWarningSystem": true,
+      "dimmingInteriorMirror": true,
+      "keylessEntry": true,
+      "driveType": "REAR",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "31c4f4494ccc2116c6b0c9b2bd71d17e",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0bd10b45-cedf-46b5-9346-5b0f7f777636?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0bd10b45-cedf-46b5-9346-5b0f7f777636?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0bd10b45-cedf-46b5-9346-5b0f7f777636?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0bd10b45-cedf-46b5-9346-5b0f7f777636?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0bd10b45-cedf-46b5-9346-5b0f7f777636?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0bd10b45-cedf-46b5-9346-5b0f7f777636?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/0b/0bd10b45-cedf-46b5-9346-5b0f7f777636?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "SCHECKHEFTGEPFLEGT",
+        "RÜCKFAHRKAMERA",
+        "TÜV NEU / SZH / NAVI"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/mercedes-benz-c-180-cgi-limousine-navi-szh-t%C3%BCv-neu-bodenheim/51772052301664.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-16T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "21900.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "52813749243776",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-26T12:19:23+01:00",
+      "modificationDate": "2026-10-28T17:27:43+01:00",
+      "vehicleClass": "Car",
+      "category": "Limousine",
+      "make": "VW",
+      "model": "Golf",
+      "modelDescription": "Golf VI R 4 Motion/KAMERA/NAVI/SZH/TÜV NEU",
+      "condition": "USED",
+      "firstRegistration": "201002",
+      "mileage": 153466,
+      "cubicCapacity": 1984,
+      "power": 199,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "PETROL",
+      "e10Enabled": false,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO5",
+      "emissions": {
+        "combined": {
+          "co2": "195"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "8.4"
+        }
+      },
+      "exteriorColor": "BLACK",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "LEATHER",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_2_ZONES",
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "FRONT_SENSORS",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "headlightType": "XENON_HEADLIGHTS",
+      "powerAssistedSteering": true,
+      "skiBag": true,
+      "sportPackage": true,
+      "sportSeats": true,
+      "sunroof": true,
+      "tractionControlSystem": true,
+      "alarmSystem": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "tirePressureMonitoring": true,
+      "paddleShifters": true,
+      "usb": true,
+      "headlightWasherSystem": true,
+      "winterPackage": true,
+      "dimmingInteriorMirror": true,
+      "collisionAvoidance": true,
+      "driveType": "ALL_WHEEL",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "d97aea8799dc62675996a7456f4bc1cf",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7acabc6-0ded-464c-b153-2ae6d7ad8c1a?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7acabc6-0ded-464c-b153-2ae6d7ad8c1a?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7acabc6-0ded-464c-b153-2ae6d7ad8c1a?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7acabc6-0ded-464c-b153-2ae6d7ad8c1a?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7acabc6-0ded-464c-b153-2ae6d7ad8c1a?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7acabc6-0ded-464c-b153-2ae6d7ad8c1a?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7acabc6-0ded-464c-b153-2ae6d7ad8c1a?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "RÜCKFAHRKAMERA",
+        "NAVI / SZH",
+        "TÜV NEU"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/vw-golf-vi-r-4-motion-kamera-navi-szh-t%C3%BCv-neu-bodenheim/52813749243776.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-24T00:00:00+02:00",
+      "price": {
+        "consumerPriceGross": "11990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "52813865707840",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-26T12:20:20+01:00",
+      "modificationDate": "2026-10-28T17:27:44+01:00",
+      "vehicleClass": "Car",
+      "category": "EstateCar",
+      "make": "VOLVO",
+      "model": "V50",
+      "modelDescription": "V50 Kombi 2.0 D Momentum/PDC/KLIMA/TÜV NEU",
+      "condition": "USED",
+      "firstRegistration": "200808",
+      "mileage": 210000,
+      "cubicCapacity": 1997,
+      "power": 100,
+      "gearbox": "MANUAL_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO4",
+      "emissions": {
+        "combined": {
+          "co2": "154"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "5.8"
+        }
+      },
+      "exteriorColor": "BLACK",
+      "manufacturerColorName": "BLACK SAPPHIRE METALLIC / Metall",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "FABRIC",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "auxiliaryHeating": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION",
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "frontFogLights": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "multifunctionalWheel": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "TUNER"
+      ],
+      "powerAssistedSteering": true,
+      "roofRails": true,
+      "armRest": true,
+      "leatherSteeringWheel": true,
+      "headlightWasherSystem": true,
+      "smokersPackage": true,
+      "dimmingInteriorMirror": true,
+      "collisionAvoidance": true,
+      "driveType": "FRONT",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "e2022d1a1283f51c1e8136d64bb12cb4",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/91/91983f8b-165f-4216-a956-3abbfb3e7c0e?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/91/91983f8b-165f-4216-a956-3abbfb3e7c0e?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/91/91983f8b-165f-4216-a956-3abbfb3e7c0e?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/91/91983f8b-165f-4216-a956-3abbfb3e7c0e?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/91/91983f8b-165f-4216-a956-3abbfb3e7c0e?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/91/91983f8b-165f-4216-a956-3abbfb3e7c0e?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/91/91983f8b-165f-4216-a956-3abbfb3e7c0e?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "PDC",
+        "KLIMA",
+        "TÜV NEU"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/volvo-v50-kombi-2-0-d-momentum-pdc-klima-t%C3%BCv-neu-bodenheim/52813865707840.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-06T00:00:00+02:00",
+      "price": {
+        "consumerPriceGross": "3900.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "52813976447360",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-26T12:21:14+01:00",
+      "modificationDate": "2026-10-28T17:27:44+01:00",
+      "vehicleClass": "Car",
+      "category": "EstateCar",
+      "make": "MERCEDES-BENZ",
+      "model": "CLS Shooting Brake",
+      "modelDescription": "CLS 220 Shooting Brake BlueTec/TÜV NEU/NAVI",
+      "condition": "USED",
+      "firstRegistration": "201410",
+      "mileage": 188834,
+      "cubicCapacity": 2143,
+      "power": 125,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "performanceHandlingSystem": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6",
+      "emissions": {
+        "combined": {
+          "co2": "130"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "4.9"
+        }
+      },
+      "exteriorColor": "SILVER",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "LEATHER",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 2,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_2_ZONES",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricWindows": true,
+      "esp": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "AUTOMATIC_PARKING"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "headlightType": "LED_HEADLIGHTS",
+      "powerAssistedSteering": true,
+      "tractionControlSystem": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "electricTailgate": true,
+      "leatherSteeringWheel": true,
+      "fatigueWarningSystem": true,
+      "tirePressureMonitoring": true,
+      "paddleShifters": true,
+      "distanceWarningSystem": true,
+      "dimmingInteriorMirror": true,
+      "collisionAvoidance": true,
+      "driveType": "REAR",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "71ad9a279cf35da5d5e80bd0fe62ec2a",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1a4a6f6-8fb6-49d2-8e45-847c4fbf009e?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1a4a6f6-8fb6-49d2-8e45-847c4fbf009e?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1a4a6f6-8fb6-49d2-8e45-847c4fbf009e?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1a4a6f6-8fb6-49d2-8e45-847c4fbf009e?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1a4a6f6-8fb6-49d2-8e45-847c4fbf009e?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1a4a6f6-8fb6-49d2-8e45-847c4fbf009e?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1a4a6f6-8fb6-49d2-8e45-847c4fbf009e?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "TÜV NEU",
+        "NAVIGATION"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/mercedes-benz-cls-shooting-brake-cls-220-shooting-brake-bluetec-t%C3%BCv-neu-navi-bodenheim/52813976447360.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "price": {
+        "consumerPriceGross": "13990.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "52814070209600",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-26T12:22:00+01:00",
+      "modificationDate": "2026-10-28T17:27:44+01:00",
+      "vehicleClass": "Car",
+      "category": "SmallCar",
+      "make": "GWM",
+      "model": "ANDERE",
+      "modelDescription": "Funky Cat 03 300 Pro/1.HAND/KAMERA/NAVI/SZH",
+      "condition": "USED",
+      "firstRegistration": "202308",
+      "mileage": 39873,
+      "power": 126,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "ELECTRICITY",
+      "e10Enabled": false,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissions": {
+        "combined": {
+          "co2": "0"
+        }
+      },
+      "consumptions": {
+        "power": {}
+      },
+      "exteriorColor": "RED",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "LEATHER",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 1,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "handsFreePhoneSystem": true,
+      "isofix": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "CAM_360_DEGREES",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "ADAPTIVE_CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "headlightType": "LED_HEADLIGHTS",
+      "tractionControlSystem": true,
+      "armRest": true,
+      "heatedSteeringWheel": true,
+      "hillStartAssist": true,
+      "fatigueWarningSystem": true,
+      "emergencyCallSystem": true,
+      "tirePressureMonitoring": true,
+      "voiceControl": true,
+      "usb": true,
+      "trafficSignRecognition": true,
+      "highBeamAssist": true,
+      "wirelessCharging": true,
+      "dimmingInteriorMirror": true,
+      "collisionAvoidance": true,
+      "keylessEntry": true,
+      "laneDepartureWarning": true,
+      "blindSpotMonitor": true,
+      "driveType": "FRONT",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "0360ff02fc2dee6502474348f8ca98ee",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a8b208b-e2e8-4c45-96a3-bf283313d919?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a8b208b-e2e8-4c45-96a3-bf283313d919?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a8b208b-e2e8-4c45-96a3-bf283313d919?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a8b208b-e2e8-4c45-96a3-bf283313d919?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a8b208b-e2e8-4c45-96a3-bf283313d919?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a8b208b-e2e8-4c45-96a3-bf283313d919?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a8b208b-e2e8-4c45-96a3-bf283313d919?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "1. HAND",
+        "19% MwSt. ausweisbar",
+        "360°-Kamera"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/gwm-andere-funky-cat-03-300-pro-1-hand-kamera-navi-szh-bodenheim/52814070209600.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-15T00:00:00+02:00",
+      "warranty": true,
+      "price": {
+        "consumerPriceGross": "17899.98",
+        "consumerPriceNet": "15042.00",
+        "vatRate": "19.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    },
+    {
+      "mobileAdId": "53209402298432",
+      "mobileSellerId": "26132851",
+      "creationDate": "2026-10-28T17:59:13+01:00",
+      "modificationDate": "2026-10-28T17:59:14+01:00",
+      "vehicleClass": "Car",
+      "category": "Limousine",
+      "make": "MERCEDES-BENZ",
+      "model": "C 220",
+      "modelDescription": "C 220 d BlueTec Exklusiv/KAMERA/NAVI/AHK",
+      "condition": "USED",
+      "firstRegistration": "201406",
+      "mileage": 115703,
+      "cubicCapacity": 2143,
+      "power": 125,
+      "gearbox": "AUTOMATIC_GEAR",
+      "fuel": "DIESEL",
+      "e10Enabled": false,
+      "particulateFilterDiesel": true,
+      "startStopSystem": true,
+      "envkvCompliant": false,
+      "emissionSticker": "EMISSIONSSTICKER_GREEN",
+      "emissionClass": "EURO6",
+      "emissions": {
+        "combined": {
+          "co2": "106"
+        }
+      },
+      "consumptions": {
+        "fuel": {
+          "combined": "4"
+        }
+      },
+      "exteriorColor": "SILVER",
+      "manufacturerColorName": "IRIDIUMSILBER",
+      "metallic": true,
+      "doors": "FOUR_OR_FIVE",
+      "seats": 5,
+      "interiorColor": "BLACK",
+      "interiorType": "PARTIAL_LEATHER",
+      "newHuAu": true,
+      "numberOfPreviousOwners": 4,
+      "fullServiceHistory": true,
+      "nonSmokerVehicle": true,
+      "countryVersion": "DE",
+      "damageUnrepaired": false,
+      "accidentDamaged": false,
+      "roadworthy": true,
+      "abs": true,
+      "airbag": "FRONT_AND_SIDE_AND_MORE_AIRBAGS",
+      "alloyWheels": true,
+      "automaticRainSensor": true,
+      "bluetooth": true,
+      "cdPlayer": true,
+      "centralLocking": true,
+      "climatisation": "AUTOMATIC_CLIMATISATION_2_ZONES",
+      "electricAdjustableSeats": true,
+      "electricExteriorMirrors": true,
+      "electricHeatedSeats": true,
+      "electricWindows": true,
+      "esp": true,
+      "handsFreePhoneSystem": true,
+      "immobilizer": true,
+      "isofix": true,
+      "lightSensor": true,
+      "multifunctionalWheel": true,
+      "navigationSystem": true,
+      "onBoardComputer": true,
+      "parkingAssistants": [
+        "REAR_VIEW_CAM",
+        "AUTOMATIC_PARKING",
+        "REAR_SENSORS"
+      ],
+      "speedControl": "CRUISE_CONTROL",
+      "radio": [
+        "DAB_RADIO"
+      ],
+      "daytimeRunningLamps": "DAYTIME_RUNNING_LIGHTS",
+      "trailerCouplingType": "TRAILER_COUPLING_FIX",
+      "powerAssistedSteering": true,
+      "armRest": true,
+      "hillStartAssist": true,
+      "leatherSteeringWheel": true,
+      "fatigueWarningSystem": true,
+      "tirePressureMonitoring": true,
+      "distanceWarningSystem": true,
+      "ambientLighting": true,
+      "dimmingInteriorMirror": true,
+      "driveType": "REAR",
+      "plainTextDescription": "",
+      "images": [
+        {
+          "hash": "ceca57c468527c4320f2ca238c995e9b",
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a514e13-aadd-4c31-b37f-ff267c4956dc?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a514e13-aadd-4c31-b37f-ff267c4956dc?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a514e13-aadd-4c31-b37f-ff267c4956dc?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a514e13-aadd-4c31-b37f-ff267c4956dc?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a514e13-aadd-4c31-b37f-ff267c4956dc?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a514e13-aadd-4c31-b37f-ff267c4956dc?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a514e13-aadd-4c31-b37f-ff267c4956dc?rule=mo-1600.jpg"
+        }
+      ],
+      "highlights": [
+        "ANHÄNGERKUPPLUNG",
+        "RÜCKFAHRKAMERA",
+        "NAVI / TÜV NEU"
+      ],
+      "detailPageUrl": "https://suchen.mobile.de/auto-inserat/mercedes-benz-c-220-d-bluetec-exklusiv-kamera-navi-ahk-bodenheim/53209402298432.html?source=api",
+      "seller": {
+        "mobileSellerId": "26132851",
+        "email": "hf.fahrzeuge@gmail.com",
+        "geoData": {
+          "lon": 8.3210634,
+          "lat": 49.925165
+        },
+        "phones": [],
+        "address": {
+          "zipcode": "55294",
+          "city": "Bodenheim",
+          "country": "DE"
+        },
+        "type": "DEALER",
+        "commercial": true,
+        "dealerLogo": {
+          "icon": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-80.jpg",
+          "s": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-200.jpg",
+          "m": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-240.jpg",
+          "l": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-360.jpg",
+          "xl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-640.jpg",
+          "xxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1024.jpg",
+          "xxxl": "https://img.classistatic.de/api/v1/mo-prod/images/13/134d988e-c6bd-45fe-aa2f-2ebc6c985f69?rule=mo-1600.jpg"
+        }
+      },
+      "deliveryDate": "2026-10-28T00:00:00+01:00",
+      "price": {
+        "consumerPriceGross": "17900.00",
+        "type": "FIXED",
+        "currency": "EUR"
+      }
+    }
+  ]
+}

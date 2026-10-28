@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:url" content="<%= canonicalUrl %>">
+    <meta property="og:locale" content="de_DE">
+    <% if (vehicle && vehicle.images.length) { %><meta property="og:image" content="<%= vehicle.images[0].url %>"><% } %>
+    <% if (!vehicle) { %><meta name="robots" content="noindex, follow"><% } %>
+    <% if (vehicle) { %><script type="application/ld+json"><%- helpers.vehicleJsonLd(vehicle) %></script><% } %>
+    <%- include('partials/head-assets') %>
+</head>
+<body>
+<%- include('partials/nav', { active: 'bestand' }) %>
+<%
+const h = helpers;
+const pageLink = vehicle ? helpers.vehicleUrl(vehicle) : '';
+const mailHref = vehicle ? `mailto:hf.fahrzeuge@gmail.com?subject=${encodeURIComponent(`Anfrage: ${vehicle.title} (Fahrzeug-Nr. ${vehicle.id})`)}&body=${encodeURIComponent(`Guten Tag,\n\nich interessiere mich für folgendes Fahrzeug:\n${vehicle.title}\n${pageLink}\n\n`)}` : '';
+%>
+<main id="main">
+<% if (!vehicle) { %>
+    <section class="container pb-24 pt-32 md:pb-32 md:pt-40">
+        <div class="stock-empty">
+            <p class="serif-accent text-4xl">Dieses Fahrzeug ist leider nicht mehr verfügbar.</p>
+            <p class="mx-auto mb-7 mt-4 max-w-xl text-sm leading-relaxed text-mute">Es wurde inzwischen verkauft oder aus unserem Bestand genommen. Gerne helfen wir Ihnen, ein vergleichbares Fahrzeug zu finden.</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="/bestand" class="btn btn-primary">Zum Fahrzeugbestand <%- include('partials/icon', { name: 'arrow-right' }) %></a>
+                <a href="tel:+4917662878366" class="btn btn-ghost"><%- include('partials/icon', { name: 'phone' }) %> Persönlich beraten lassen</a>
+            </div>
+        </div>
+        <% if (related.length) { %>
+        <h2 class="mb-6 mt-16 font-display text-2xl font-medium tracking-tight">Aktuell im Bestand</h2>
+        <div class="stock-grid"><% related.forEach(item => { %><%- include('partials/vehicle-card', { vehicle: item }) %><% }) %></div>
+        <% } %>
+    </section>
+<% } else { %>
+    <section class="container pb-16 pt-[5.75rem]">
+        <nav class="mb-4 flex items-center gap-2 text-xs text-mute" aria-label="Breadcrumb">
+            <a href="/" class="transition-colors hover:text-bone">Startseite</a><span aria-hidden="true">/</span>
+            <a href="/bestand" class="transition-colors hover:text-bone">Bestand</a><span aria-hidden="true">/</span>
+            <span class="truncate text-bone/80"><%= vehicle.make %> <%= vehicle.model %></span>
+        </nav>
+
+        <div class="vdp-layout">
+            <!-- Head: title, price, identifiers -->
+            <div class="vdp-head">
+                <p class="text-[0.7rem] uppercase tracking-[0.18em] text-accent"><%= vehicle.make %> · <%= h.label('condition', vehicle.condition) || 'Gebrauchtfahrzeug' %></p>
+                <h1 class="mt-2 font-display text-2xl font-medium leading-tight tracking-tight md:text-[1.75rem]"><%= vehicle.title %></h1>
+                <div class="mt-4 flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
+                    <div>
+                        <p class="font-display text-4xl font-medium tracking-tight"><%= h.priceText(vehicle) %></p>
+                        <p class="mt-1 text-xs text-mute"><%= vehicle.price.vatDeductible ? 'Brutto, MwSt. ausweisbar' : 'MwSt. nicht ausweisbar' %> · Finanzierung auf Anfrage</p>
+                    </div>
+                    <span class="vdp-badge"><span class="vdp-dot" aria-hidden="true"></span>Verfügbar</span>
+                </div>
+                <p class="mt-3 text-sm text-bone/85 lg:hidden"><%= [vehicle.firstRegistration && 'EZ ' + h.fmtMonth(vehicle.firstRegistration), vehicle.mileage != null && h.fmtNumber(vehicle.mileage) + ' km', vehicle.fuel, vehicle.power && vehicle.power.ps + ' PS'].filter(Boolean).join(' · ') %></p>
+                <p class="mt-4 text-xs leading-relaxed text-mute">
+                    <% if (vehicle.vin) { %>FIN <span class="font-medium tabular-nums text-bone/85"><%= vehicle.vin %></span> · <% } %>Fahrzeug-Nr. <span class="font-medium tabular-nums text-bone/85"><%= vehicle.id %></span><br>
+                    H&amp;F Autohaus Bodenheim · Am Kümmerling 41a, 55294 Bodenheim
+                </p>
+            </div>
+
+            <!-- Gallery -->
+            <div class="vdp-gallery" data-gallery>
+                <div class="vdp-main">
+                    <% if (vehicle.images.length) { %>
+                        <img data-gallery-main src="<%= vehicle.images[0].medium || vehicle.images[0].url %>" srcset="<%= vehicle.images[0].medium || vehicle.images[0].url %> 1024w, <%= vehicle.images[0].url %> 1600w" sizes="(min-width: 1024px) 60vw, 100vw" alt="<%= vehicle.title %> – Bild 1" width="1600" height="1200" fetchpriority="high">
+                        <% if (vehicle.images.length > 1) { %>
+                        <button type="button" class="vdp-nav vdp-prev" data-gallery-prev aria-label="Vorheriges Bild"><%- include('partials/icon', { name: 'arrow-left', cls: 'h-4 w-4' }) %></button>
+                        <button type="button" class="vdp-nav vdp-next" data-gallery-next aria-label="Nächstes Bild"><%- include('partials/icon', { name: 'arrow-right', cls: 'h-4 w-4' }) %></button>
+                        <span class="vdp-counter"><span data-gallery-index>1</span> / <%= vehicle.images.length %></span>
+                        <% } %>
+                    <% } else { %>
+                        <div class="flex h-full items-center justify-center text-sm text-mute">Bilder folgen in Kürze</div>
+                    <% } %>
+                </div>
+                <% if (vehicle.images.length > 1) { %>
+                <div class="vdp-thumbs" role="list">
+                    <% vehicle.images.forEach((image, i) => { %>
+                    <a role="listitem" href="<%= image.url %>" target="_blank" rel="noopener" class="vdp-thumb <%= i === 0 ? 'is-active' : '' %>" data-gallery-thumb="<%= i %>" data-full="<%= image.url %>" data-medium="<%= image.medium || image.url %>" aria-label="Bild <%= i + 1 %> anzeigen">
+                        <img src="<%= image.thumb || image.url %>" alt="" loading="lazy" width="120" height="90">
+                    </a>
+                    <% }) %>
+                </div>
+                <% } %>
+            </div>
+
+            <!-- Key facts + actions -->
+            <div class="vdp-info">
+                <dl class="vdp-facts">
+                    <div><dt>Erstzulassung</dt><dd><%= h.fmtMonth(vehicle.firstRegistration) || 'k. A.' %></dd></div>
+                    <div><dt>Kilometerstand</dt><dd><%= vehicle.mileage != null ? h.fmtNumber(vehicle.mileage) + ' km' : 'k. A.' %></dd></div>
+                    <div><dt>Leistung</dt><dd><%= vehicle.power ? `${vehicle.power.kw} kW (${vehicle.power.ps} PS)` : 'k. A.' %></dd></div>
+                    <div><dt>Kraftstoff</dt><dd><%= vehicle.fuel || 'k. A.' %></dd></div>
+                    <div><dt>Getriebe</dt><dd><%= vehicle.gearbox || 'k. A.' %></dd></div>
+                    <div><dt>Fahrzeughalter</dt><dd><%= vehicle.specifications.previousOwners != null ? vehicle.specifications.previousOwners : 'k. A.' %></dd></div>
+                </dl>
+                <div class="mt-5 grid grid-cols-2 gap-3">
+                    <a href="<%= whatsappVehicleUrl(vehicle) %>" target="_blank" rel="noopener noreferrer" class="btn btn-primary col-span-2"><%- include('partials/icon', { name: 'whatsapp' }) %> Jetzt per WhatsApp anfragen</a>
+                    <a href="tel:+4917662878366" class="btn btn-ghost"><%- include('partials/icon', { name: 'phone' }) %> Anrufen</a>
+                    <a href="<%= mailHref %>" class="btn btn-ghost"><%- include('partials/icon', { name: 'mail' }) %> E-Mail</a>
+                </div>
+                <a href="<%= vehicle.listingUrl %>" target="_blank" rel="noopener noreferrer" class="link-arrow mt-4 text-xs text-mute">Inserat auf mobile.de ansehen <%- include('partials/icon', { name: 'arrow-up-right' }) %></a>
+            </div>
+        </div>
+
+        <!-- Details -->
+        <div class="mt-14 grid gap-12 lg:grid-cols-12">
+            <div class="space-y-12 lg:col-span-8">
+                <% if (vehicle.features.length) { %>
+                <section aria-labelledby="ausstattung">
+                    <h2 id="ausstattung" class="vdp-h2">Ausstattung</h2>
+                    <ul class="vdp-features">
+                        <% vehicle.features.forEach(feature => { %><li><%- include('partials/icon', { name: 'check', cls: 'h-4 w-4 shrink-0 text-accent' }) %><%= feature %></li><% }) %>
+                    </ul>
+                </section>
+                <% } %>
+
+                <% if (vehicle.description) { %>
+                <section aria-labelledby="beschreibung">
+                    <h2 id="beschreibung" class="vdp-h2">Fahrzeugbeschreibung</h2>
+                    <div class="vdp-description" data-collapsible>
+                        <p><%= vehicle.description %></p>
+                    </div>
+                    <button type="button" class="link-arrow mt-3 hidden text-accent-light" data-collapsible-toggle>Mehr anzeigen</button>
+                </section>
+                <% } %>
+            </div>
+
+            <aside class="lg:col-span-4" aria-labelledby="technik">
+                <h2 id="technik" class="vdp-h2">Technische Daten</h2>
+                <dl class="vdp-specs">
+                    <% h.specRows(vehicle).forEach(([key, value]) => { %><div><dt><%= key %></dt><dd><%= value %></dd></div><% }) %>
+                </dl>
+                <div class="surface mt-6 p-5">
+                    <p class="font-medium">H&amp;F Autohaus Bodenheim</p>
+                    <p class="mt-1 text-sm text-mute">Am Kümmerling 41a, 55294 Bodenheim<br>Mo – Fr · 09:00 – 18:00 Uhr</p>
+                    <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+                        <a href="tel:+4917662878366" class="link-arrow">0176 628 783 66</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Am+K%C3%BCmmerling+41a,+55294+Bodenheim" target="_blank" rel="noopener noreferrer" class="link-arrow">Route planen <%- include('partials/icon', { name: 'arrow-up-right' }) %></a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <p class="mt-12 text-xs leading-relaxed text-mute">Änderungen, Zwischenverkauf und Irrtümer vorbehalten. Alle Angaben ohne Gewähr; maßgeblich ist der Kaufvertrag. Verfügbarkeit und verbindliche Fahrzeugangaben bestätigen wir Ihnen gerne persönlich. Weitere Informationen zum offiziellen Kraftstoffverbrauch und den CO₂-Emissionen neuer Pkw finden Sie im „Leitfaden über den Kraftstoffverbrauch, die CO₂-Emissionen und den Stromverbrauch neuer Pkw“ der DAT.</p>
+
+        <% if (related.length) { %>
+        <section class="mt-20" aria-labelledby="weitere">
+            <div class="mb-6 flex items-end justify-between gap-4">
+                <h2 id="weitere" class="font-display text-2xl font-medium tracking-tight">Weitere Fahrzeuge</h2>
+                <a href="/bestand" class="link-arrow text-sm">Gesamter Bestand <%- include('partials/icon', { name: 'arrow-right' }) %></a>
+            </div>
+            <div class="stock-grid"><% related.forEach(item => { %><%- include('partials/vehicle-card', { vehicle: item }) %><% }) %></div>
+        </section>
+        <% } %>
+    </section>
+<% } %>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>

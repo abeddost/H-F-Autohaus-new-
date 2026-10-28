@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>">
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:url" content="<%= canonicalUrl %>">
+<%- include('partials/head-assets') %>
+</head>
+<body>
+<%- include('partials/nav', { active: 'legal' }) %>
+
+<main id="main">
+    <section class="relative overflow-hidden pb-14 pt-40 md:pt-48">
+        <div class="pointer-events-none absolute -left-40 top-10 h-[28rem] w-[28rem] rounded-full bg-accent/[0.05] blur-[120px]"></div>
+        <div class="container relative">
+            <div class="mx-auto max-w-4xl hero-enter">
+                <p class="eyebrow mb-7">Rechtliches</p>
+                <h1 class="display text-5xl md:text-7xl">Impressum</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-24 md:pb-36">
+        <div class="container">
+            <div class="mx-auto max-w-4xl border-t border-white/[0.08] pt-12">
+                <div class="prose-hf space-y-10">
+
+
+                <section>
+                    <p>Idris Sarwari</p>
+                    <p>Autohaus HF</p>
+                    <p>Am Kuemmerling 41a</p>
+                    <p>55294 Bodenheim</p>
+                </section>
+
+                <section>
+                    <h2>Kontakt</h2>
+                    <p>Telefon: <a href="tel:017662878366">0176 62878366</a></p>
+                    <p>E-Mail: <a href="mailto:hf.fahrzeuge@gmail.com">hf.fahrzeuge@gmail.com</a></p>
+                </section>
+
+                <section>
+                    <h2>Umsatzsteuer-ID</h2>
+                    <p>Umsatzsteuer-Identifikationsnummer gemaess § 27 a Umsatzsteuergesetz:</p>
+                    <p>DE332778289</p>
+                </section>
+
+                <section>
+                    <h2>EU-Streitschlichtung</h2>
+                    <p>Die Europaeische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:</p>
+                    <p><a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a></p>
+                    <p>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+                </section>
+
+                <section>
+                    <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+                    <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+                </section>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
+</body>
+</html>

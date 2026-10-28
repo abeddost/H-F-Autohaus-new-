@@ -1,0 +1,63 @@
+<%
+const isHome = locals.isHome || false;
+const base = isHome ? '' : '/';
+const navItems = [
+    { href: '/bestand', label: 'Bestand', key: 'bestand' },
+    { href: '/ueber-uns', label: 'Über uns', key: 'ueber-uns' },
+    { href: base + '#leistungen', label: 'Leistungen' },
+    { href: base + '#garantie', label: 'Garantie' },
+    { href: '/blog', label: 'Ratgeber', key: 'blog' },
+    { href: '/kontakt', label: 'Kontakt', key: 'kontakt' }
+];
+%>
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-bone focus:px-4 focus:py-2 focus:text-ink">Zum Inhalt springen</a>
+
+<header id="siteNav" class="site-nav <%= isHome ? '' : 'is-solid' %>">
+    <div class="container flex h-full items-center justify-between gap-6">
+        <a href="/" class="group flex items-center gap-3" aria-label="H&F Autohaus Bodenheim – Startseite">
+            <img src="<%= staticAsset('/logo-360.v1.png') %>" alt="" class="logo-mark h-6 w-auto md:h-7" width="360" height="84">
+            <span class="flex flex-col leading-none">
+                <span class="font-display text-[0.95rem] font-semibold tracking-[0.18em] text-bone">H&amp;F</span>
+                <span class="mt-1 text-[0.6rem] font-medium uppercase tracking-[0.32em] text-mute">Autohaus</span>
+            </span>
+        </a>
+
+        <nav class="hidden items-center gap-6 lg:flex xl:gap-8" aria-label="Hauptnavigation">
+            <% navItems.forEach(item => { %>
+                <a href="<%= item.href %>" class="nav-link <%= item.key && item.key === locals.active ? 'is-active' : '' %>"><%= item.label %></a>
+            <% }) %>
+        </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="tel:+4917662878366" class="hidden items-center gap-2 text-[0.8125rem] font-medium text-bone/80 transition-colors hover:text-bone xl:inline-flex">
+                <%- include('icon', { name: 'phone', cls: 'h-4 w-4 text-accent' }) %>
+                0176 628 783 66
+            </a>
+            <a href="/bestand" class="btn btn-ghost btn-sm hidden sm:inline-flex">
+                Fahrzeugbestand
+                <%- include('icon', { name: 'arrow-up-right', cls: 'h-3.5 w-3.5' }) %>
+            </a>
+            <button id="menuToggle" type="button" class="menu-toggle flex h-10 w-10 flex-col items-center justify-center gap-[5px] rounded-full border border-white/15 lg:hidden" aria-expanded="false" aria-controls="mobileMenu" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div id="mobileMenu" class="mobile-menu lg:hidden" aria-hidden="true">
+    <div class="container flex flex-1 flex-col justify-between pb-10 pt-6">
+        <nav aria-label="Mobile Navigation">
+            <% navItems.forEach((item, i) => { %>
+                <a href="<%= item.href %>" class="mobile-link" style="--i: <%= i %>">
+                    <%= item.label %>
+                    <%- include('icon', { name: 'arrow-right', cls: 'h-5 w-5 text-faint' }) %>
+                </a>
+            <% }) %>
+        </nav>
+        <div class="grid grid-cols-2 gap-3 pt-8">
+            <a href="tel:+4917662878366" class="btn btn-ghost"><%- include('icon', { name: 'phone' }) %> Anrufen</a>
+            <a href="https://wa.me/4917662878366" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><%- include('icon', { name: 'whatsapp' }) %> WhatsApp</a>
+        </div>
+    </div>
+</div>
