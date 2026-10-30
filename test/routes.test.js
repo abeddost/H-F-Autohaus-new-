@@ -228,6 +228,9 @@ test('contact form: visitors pick a stock car or "Sonstiges", and the email name
     assert.equal(sentEmails[0].subject, 'Website-Anfrage von Max – Mercedes-Benz C 220 d T-Modell AMG Line');
     assert.match(sentEmails[0].html, /href="https:\/\/hf-autos\.de\/bestand\/mercedes-benz-c-220-412345678"/);
     assert.match(sentEmails[0].text, /Fahrzeug: Mercedes-Benz C 220 d T-Modell AMG Line · 28\.990 € · Nr\. 412345678/);
+    assert.equal(sentEmails[1].to, 'max@beispiel.de');
+    assert.equal(sentEmails[1].subject, 'Ihre Anfrage zum Mercedes-Benz C 220 d T-Modell AMG Line – H&F Autohaus');
+    assert.ok(sentEmails[1].reply_to, 'replies to the confirmation reach the dealership');
 
     sentEmails.length = 0;
     await post({ vehicleId: 'other' });

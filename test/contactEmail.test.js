@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { buildContactNotification, formatPhone } = require('../lib/contactEmail');
+const { buildContactNotification, buildContactConfirmation, formatPhone } = require('../lib/contactEmail');
 
 const submission = {
     name: 'Max Mustermann',
@@ -67,4 +67,26 @@ test('"Sonstiges" is shown when no car was chosen', () => {
     const { html, text } = buildContactNotification(submission);
     assert.match(html, /Sonstiges – kein bestimmtes Fahrzeug/);
     assert.match(text, /Fahrzeug: Sonstiges/);
+});
+
+test('confirmation thanks the visitor, shows the chosen car and how to reach the dealership', () => {
+    const vehicle = { id: '123', name: 'Land Rover Defender D240 S AWD', price: '43.900 €', url: 'https://hf-autos.de/bestand/land-rover-defender-123', image: 'https://img.example/1.jpg' };
+    const { subject, html, text } = buildContactConfirmation({ ...submission, name: '<i>Max</i>', vehicle });
+
+    assert.equal(subject, 'Ihre Anfrage zum Land Rover Defender D240 S AWD – H&F Autohaus');
+    assert.match(html, /Vielen Dank, &lt;i&gt;Max&lt;\/i&gt;!/);
+    assert.match(html, /Ihr Wunschfahrzeug/);
+    assert.match(html, /BMW 320d, Baujahr 2018<br>ca\. 95\.000 km/);
+    assert.match(html, /href="tel:\+4917662878366"/);
+    assert.match(html, /href="https:\/\/wa\.me\/4917662878366"/);
+    assert.match(html, /\/impressum"/);
+    assert.match(text, /Ihr Wunschfahrzeug: Land Rover Defender D240 S AWD · 43\.900 €/);
+});
+
+test('confirmation without a listed car has a neutral subject and no car section', () => {
+    for (const vehicle of [null, { id: '999', name: 'Fahrzeug nicht mehr im Bestand' }]) {
+        const { subject, html } = buildContactConfirmation({ ...submission, vehicle });
+        assert.equal(subject, 'Ihre Anfrage bei H&F Autohaus Bodenheim');
+        assert.doesNotMatch(html, /Wunschfahrzeug|nicht mehr im Bestand/);
+    }
 });
