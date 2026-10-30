@@ -242,7 +242,7 @@
     // ---------------------------------------------------------------------
     // Homepage "Top-Fahrzeuge" slideshow (native scroll-snap + autoplay)
     // ---------------------------------------------------------------------
-    const AUTOPLAY_MS = 2500;
+    const AUTOPLAY_MS = 6000;
 
     document.querySelectorAll('[data-carousel]').forEach((carousel) => {
         const track = carousel.querySelector('[data-carousel-track]');
@@ -260,8 +260,9 @@
 
         function setActive(index) {
             current = index;
-            dots.forEach((dot, i) => {
-                const active = i === index;
+            // Desktop thumbnails and mobile dots both carry data-carousel-dot="<slide index>".
+            dots.forEach((dot) => {
+                const active = Number(dot.dataset.carouselDot) === index;
                 dot.classList.toggle('is-active', active);
                 if (active) {
                     dot.setAttribute('aria-current', 'true');
@@ -313,7 +314,7 @@
 
         section.querySelector('[data-carousel-prev]')?.addEventListener('click', () => goTo(current - 1));
         section.querySelector('[data-carousel-next]')?.addEventListener('click', () => goTo(current + 1));
-        dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+        dots.forEach((dot) => dot.addEventListener('click', () => goTo(Number(dot.dataset.carouselDot))));
         carousel.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft') goTo(current - 1);
             if (e.key === 'ArrowRight') goTo(current + 1);

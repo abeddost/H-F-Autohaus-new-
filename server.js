@@ -33,7 +33,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Bump when styles.css or js/site.js change so browsers fetch the new files
-const ASSET_VERSION = '20261029-whatsapp';
+const ASSET_VERSION = '20261030-highlights';
 
 app.use((req, res, next) => {
     res.locals.assetVersion = ASSET_VERSION;

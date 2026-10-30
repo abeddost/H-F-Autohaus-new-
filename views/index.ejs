@@ -205,29 +205,40 @@ const categories = [
                 <div id="featTrack" class="feat-track" data-carousel-track aria-live="polite">
                     <% featured.forEach((car, i) => {
                         const carUrl = `/bestand/${car.slug}`;
-                        const img = car.images[0]; %>
+                        const img = car.images[0];
+                        const parts = helpers.titleParts(car); %>
                     <article class="feat-slide" aria-roledescription="Folie" aria-label="<%= i + 1 %> von <%= featured.length %>: <%= car.title %>">
                         <a href="<%= carUrl %>" class="feat-media" tabindex="-1" aria-hidden="true">
                             <img src="<%= img.medium || img.url %>" srcset="<%= img.medium || img.url %> 1024w, <%= img.url %> 1600w" sizes="(min-width: 1024px) 58vw, 100vw" alt="" loading="<%= i === 0 ? 'eager' : 'lazy' %>" width="1600" height="1000">
-                            <span class="feat-count"><%= String(i + 1).padStart(2, '0') %> / <%= String(featured.length).padStart(2, '0') %></span>
+                            <% if (car.images.length > 1) { %>
+                            <span class="feat-badge"><%- include('partials/icon', { name: 'camera', cls: 'h-3.5 w-3.5' }) %> <%= car.images.length %> Fotos</span>
+                            <% } %>
                         </a>
                         <div class="feat-info">
                             <div>
-                                <p class="text-[0.7rem] uppercase tracking-[0.18em] text-accent"><%= car.make %></p>
-                                <h3 class="feat-title"><a href="<%= carUrl %>" class="transition-colors hover:text-accent-light"><%= car.title %></a></h3>
+                                <p class="feat-make"><%= car.make %></p>
+                                <h3 class="feat-title"><a href="<%= carUrl %>" class="transition-colors hover:text-accent-light"><%= parts.name %></a></h3>
+                                <% if (parts.highlights.length) { %>
+                                <ul class="feat-tags" aria-label="Highlights">
+                                    <% parts.highlights.forEach((tag) => { %><li><%= tag %></li><% }) %>
+                                </ul>
+                                <% } %>
                                 <dl class="feat-facts">
-                                    <div><dt>Erstzulassung</dt><dd><%= helpers.fmtMonth(car.firstRegistration) || 'k. A.' %></dd></div>
-                                    <div><dt>Kilometer</dt><dd><%= car.mileage != null ? helpers.fmtNumber(car.mileage) + ' km' : 'k. A.' %></dd></div>
-                                    <div><dt>Leistung</dt><dd><%= car.power ? car.power.ps + ' PS' : 'k. A.' %></dd></div>
-                                    <div><dt>Getriebe</dt><dd><%= car.gearbox || 'k. A.' %></dd></div>
+                                    <div><dt><span class="feat-fact-icon"><%- include('partials/icon', { name: 'calendar', cls: 'h-4 w-4' }) %></span>Erstzulassung</dt><dd><%= helpers.fmtMonth(car.firstRegistration) || 'k. A.' %></dd></div>
+                                    <div><dt><span class="feat-fact-icon"><%- include('partials/icon', { name: 'gauge', cls: 'h-4 w-4' }) %></span>Kilometer</dt><dd><%= car.mileage != null ? helpers.fmtNumber(car.mileage) + ' km' : 'k. A.' %></dd></div>
+                                    <div><dt><span class="feat-fact-icon"><%- include('partials/icon', { name: 'bolt', cls: 'h-4 w-4' }) %></span>Leistung</dt><dd><%= car.power ? car.power.ps + ' PS' : 'k. A.' %></dd></div>
+                                    <div><dt><span class="feat-fact-icon"><%- include('partials/icon', { name: 'gearbox', cls: 'h-4 w-4' }) %></span>Getriebe</dt><dd><%= car.gearbox || 'k. A.' %></dd></div>
                                 </dl>
                             </div>
-                            <div class="mt-6 flex flex-wrap items-end justify-between gap-4 border-t border-white/[0.08] pt-5">
+                            <div class="feat-buy">
                                 <div>
-                                    <p class="font-display text-3xl font-medium tracking-tight md:text-4xl"><%= helpers.priceText(car) %></p>
-                                    <p class="mt-1 text-xs text-mute"><%= car.fuel || '' %><%= car.fuel ? ' · ' : '' %>Finanzierung auf Anfrage</p>
+                                    <p class="feat-price"><%= helpers.priceText(car) %></p>
+                                    <p class="mt-2 text-xs text-mute"><%= [car.fuel, car.price.vatDeductible ? 'MwSt. ausweisbar' : null, 'Finanzierung auf Anfrage'].filter(Boolean).join(' · ') %></p>
                                 </div>
-                                <a href="<%= carUrl %>" class="btn btn-primary">Details ansehen <%- include('partials/icon', { name: 'arrow-right', extra: 'arrow' }) %></a>
+                                <div class="flex items-center gap-2.5">
+                                    <a href="<%= whatsappVehicleUrl(car) %>" class="feat-wa" target="_blank" rel="noopener noreferrer" aria-label="Per WhatsApp zu diesem Fahrzeug anfragen"><%- include('partials/icon', { name: 'whatsapp', cls: 'h-[18px] w-[18px]' }) %></a>
+                                    <a href="<%= carUrl %>" class="btn btn-primary">Details ansehen <%- include('partials/icon', { name: 'arrow-right', extra: 'arrow' }) %></a>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -235,7 +246,20 @@ const categories = [
                 </div>
 
                 <% if (featured.length > 1) { %>
-                <div class="mt-6 flex items-center justify-between gap-6">
+                <div class="feat-thumbs" style="--n:<%= featured.length %>" role="group" aria-label="Fahrzeug auswählen">
+                    <% featured.forEach((car, i) => {
+                        const thumb = car.images[0]; %>
+                    <button type="button" class="feat-thumb<%= i === 0 ? ' is-active' : '' %>" data-carousel-dot="<%= i %>" aria-label="Fahrzeug <%= i + 1 %>: <%= car.title %>"<%= i === 0 ? ' aria-current="true"' : '' %>>
+                        <span class="feat-thumb-bar"></span>
+                        <img src="<%= thumb.medium || thumb.url %>" alt="" loading="lazy" width="64" height="44">
+                        <span class="min-w-0 text-left">
+                            <span class="block truncate text-[13px] font-medium text-bone"><%= car.model && car.model !== 'ANDERE' ? car.model : helpers.titleParts(car).name %></span>
+                            <span class="mt-0.5 block text-xs text-mute"><%= helpers.priceText(car) %></span>
+                        </span>
+                    </button>
+                    <% }) %>
+                </div>
+                <div class="mt-6 flex items-center justify-between gap-6 lg:hidden">
                     <div class="feat-dots" role="group" aria-label="Fahrzeug auswählen">
                         <% featured.forEach((car, i) => { %>
                         <button type="button" class="feat-dot<%= i === 0 ? ' is-active' : '' %>" data-carousel-dot="<%= i %>" aria-label="Fahrzeug <%= i + 1 %>: <%= car.title %>"<%= i === 0 ? ' aria-current="true"' : '' %>><span></span></button>
