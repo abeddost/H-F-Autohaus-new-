@@ -149,7 +149,7 @@ test('outdated slugs redirect, sold vehicles return 404, sitemap lists vehicles'
     assert.match(sitemap, /<loc>https:\/\/hf-autos\.de\/<\/loc>/);
 });
 
-test('Über uns and Kontakt are separate pages; Ankauf is gone from the menu', async () => {
+test('Über uns and Kontakt have their own pages; Ankauf is gone from the menu', async () => {
     const about = await fetch(`${base}/ueber-uns`);
     const aboutHtml = await about.text();
     assert.equal(about.status, 200);
@@ -163,11 +163,22 @@ test('Über uns and Kontakt are separate pages; Ankauf is gone from the menu', a
     assert.match(contactHtml, /google\.com\/maps\/embed/);
 
     const home = await (await fetch(`${base}/`)).text();
-    assert.doesNotMatch(home, /id="fahrzeugankauf"|id="ueber-uns"|id="kontakt"|id="contactForm"/);
+    assert.doesNotMatch(home, /id="fahrzeugankauf"|id="ueber-uns"/);
     assert.match(home, /href="\/ueber-uns"/);
     assert.match(home, /href="\/kontakt"/);
     assert.doesNotMatch(home, />Ankauf</);
     assert.match(home, /<link rel="icon" href="\/favicon\.ico"/);
+});
+
+test('homepage ends with the contact section, form and success modal', async () => {
+    const home = await (await fetch(`${base}/`)).text();
+    const contact = home.indexOf('id="kontakt"');
+    assert.ok(contact > home.indexOf('id="leistungen"'), 'contact section below the other sections');
+    assert.match(home, /id="contactForm"/);
+    assert.match(home, /id="whatsappSendBtn"/);
+    assert.match(home, /id="customModal"/);
+    assert.match(home, /google\.com\/maps\/embed/);
+    assert.equal(home.match(/id="contactForm"/g).length, 1);
 });
 
 test('Google vehicle feed is served as TSV from the synced inventory', async () => {
