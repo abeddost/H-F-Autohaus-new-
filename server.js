@@ -8,6 +8,7 @@ const { filterVehicles, pickFeaturedVehicles } = require('./lib/vehicleFilters')
 const { createInventoryStore } = require('./lib/inventoryStore');
 const { syncInventory, getInventory, getSyncStatus } = require('./lib/inventory');
 const { isSyncAuthorized } = require('./lib/syncAuth');
+const { buildContactNotification, escapeHtml } = require('./lib/contactEmail');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -338,22 +339,14 @@ app.post('/contact', async (req, res) => {
         }
 
         // Send email using Resend
+        const notification = buildContactNotification({ name, email, phone, message });
         const emailResult = await resend.emails.send({
             from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
             to: DEFAULT_CONTACT_EMAIL,
             replyTo: email,
-            subject: `Neue Kontaktanfrage von ${name} - H&F Autohaus`,
-            html: `
-                <h2>Neue Kontaktanfrage</h2>
-                <p><strong>Name:</strong> ${name}</p>
-                <p><strong>E-Mail:</strong> ${email}</p>
-                <p><strong>Telefon:</strong> ${phone || 'Nicht angegeben'}</p>
-                <p><strong>Nachricht:</strong></p>
-                <p>${message.replace(/\n/g, '<br>')}</p>
-                <p><strong>Datenschutz-Einwilligung:</strong> Erteilt</p>
-                <hr>
-                <p><small>Diese E-Mail wurde ueber das Kontaktformular auf der H&F Autohaus Website gesendet.</small></p>
-            `
+            subject: notification.subject,
+            html: notification.html,
+            text: notification.text
         });
 
         if (emailResult.error) {
@@ -371,10 +364,10 @@ app.post('/contact', async (req, res) => {
             subject: 'Ihre Anfrage bei H&F Autohaus Bodenheim',
             html: `
                 <h2>Vielen Dank fuer Ihre Anfrage!</h2>
-                <p>Sehr geehrte/r ${name},</p>
+                <p>Sehr geehrte/r ${escapeHtml(name)},</p>
                 <p>wir haben Ihre Nachricht erhalten und werden uns schnellstmoeglich bei Ihnen melden.</p>
                 <p><strong>Ihre Nachricht:</strong></p>
-                <p>${message.replace(/\n/g, '<br>')}</p>
+                <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
                 <hr>
                 <p>Mit freundlichen Gruessen,<br>H&F Autohaus Bodenheim</p>
                 <p><small>Am Kuemmerling 41a, 55294 Bodenheim<br>Tel: 017662878366<br>E-Mail: hf.fahrzeuge@gmail.com</small></p>
