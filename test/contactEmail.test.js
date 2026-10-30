@@ -51,3 +51,20 @@ test('formatPhone matches the form formatting', () => {
     assert.equal(formatPhone('+31 6 1'), '+31 6 1');
     assert.equal(formatPhone('  '), '');
 });
+
+test('chosen car appears as a card with link, price and number', () => {
+    const vehicle = { id: '123', name: 'Land Rover Defender D240 S AWD', price: '43.900 €', url: 'https://hf-autos.de/bestand/land-rover-defender-123', image: 'https://img.example/1.jpg' };
+    const { subject, html, text } = buildContactNotification({ ...submission, vehicle });
+
+    assert.equal(subject, 'Website-Anfrage von Max Mustermann – Land Rover Defender D240 S AWD');
+    assert.match(html, /<img src="https:\/\/img\.example\/1\.jpg"/);
+    assert.match(html, /43\.900 €/);
+    assert.match(html, /Nr\. 123/);
+    assert.match(text, /Fahrzeug: Land Rover Defender D240 S AWD · 43\.900 € · Nr\. 123 · https:/);
+});
+
+test('"Sonstiges" is shown when no car was chosen', () => {
+    const { html, text } = buildContactNotification(submission);
+    assert.match(html, /Sonstiges – kein bestimmtes Fahrzeug/);
+    assert.match(text, /Fahrzeug: Sonstiges/);
+});

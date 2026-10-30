@@ -20,10 +20,15 @@ Object.assign(process.env, {
 delete process.env.UPSTASH_REDIS_REST_URL;
 delete process.env.KV_REST_API_URL;
 
-// Stub mobile.de; let local requests through.
+// Stub mobile.de and Resend; let local requests through.
 const realFetch = globalThis.fetch;
 let mobileDeStatus = 200;
+const sentEmails = [];
 globalThis.fetch = async (url, options) => {
+    if (String(url).startsWith('https://api.resend.com/')) {
+        sentEmails.push(JSON.parse(options.body));
+        return new Response(JSON.stringify({ id: `test-${sentEmails.length}` }), { status: 200 });
+    }
     if (String(url).startsWith('https://services.mobile.de/')) {
         if (mobileDeStatus !== 200) {
             return new Response('', { status: mobileDeStatus });
@@ -199,6 +204,39 @@ test('homepage shows the Top-Fahrzeuge slideshow above Leistungen once stock is 
     assert.ok(slideshow < home.indexOf('id="leistungen"'), 'placed above Leistungen');
     assert.match(home, /class="feat-slide"[\s\S]*?href="\/bestand\/mercedes-benz-c-220-412345678"/);
     assert.match(home, /28\.990 €/);
+});
+
+test('contact form: visitors pick a stock car or "Sonstiges", and the email names the car', async () => {
+    const page = await (await fetch(`${base}/kontakt`)).text();
+    assert.match(page, /<select name="vehicleId" id="vehicle"[^>]*required/);
+    assert.match(page, /<option value="other">Sonstiges – kein bestimmtes Fahrzeug<\/option>/);
+    assert.match(page, /<optgroup label="Mercedes-Benz">\s*<option value="412345678" data-url="https:\/\/hf-autos\.de\/bestand\/mercedes-benz-c-220-412345678" data-make="Mercedes-Benz" data-name="C 220 d T-Modell AMG Line" data-price="28\.990 €" data-image="https:\/\/[^"]+">C 220 d T-Modell AMG Line · 28\.990 €<\/option>/);
+    assert.match(page, /<div class="vpick" data-vehicle-picker>/);
+    assert.match(await (await fetch(`${base}/`)).text(), /<option value="412345678"/);
+
+    const post = (extra) => fetch(`${base}/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: 'Max', email: 'max@beispiel.de', message: 'Hallo', privacyConsent: true, ...extra })
+    });
+
+    sentEmails.length = 0;
+    assert.equal((await post({})).status, 400, 'a choice is required');
+    assert.equal(sentEmails.length, 0);
+
+    assert.equal((await post({ vehicleId: '412345678' })).status, 200);
+    assert.equal(sentEmails[0].subject, 'Website-Anfrage von Max – Mercedes-Benz C 220 d T-Modell AMG Line');
+    assert.match(sentEmails[0].html, /href="https:\/\/hf-autos\.de\/bestand\/mercedes-benz-c-220-412345678"/);
+    assert.match(sentEmails[0].text, /Fahrzeug: Mercedes-Benz C 220 d T-Modell AMG Line · 28\.990 € · Nr\. 412345678/);
+
+    sentEmails.length = 0;
+    await post({ vehicleId: 'other' });
+    assert.match(sentEmails[0].html, /Sonstiges – kein bestimmtes Fahrzeug/);
+    assert.match(sentEmails[0].subject, /– H&F Autohaus$/);
+
+    sentEmails.length = 0;
+    await post({ vehicleId: '999' });
+    assert.match(sentEmails[0].html, /Fahrzeug nicht mehr im Bestand/);
 });
 
 test('WhatsApp leads are marked as coming from the website', async () => {

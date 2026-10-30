@@ -251,7 +251,7 @@ const categories = [
                         const thumb = car.images[0]; %>
                     <button type="button" class="feat-thumb<%= i === 0 ? ' is-active' : '' %>" data-carousel-dot="<%= i %>" aria-label="Fahrzeug <%= i + 1 %>: <%= car.title %>"<%= i === 0 ? ' aria-current="true"' : '' %>>
                         <span class="feat-thumb-bar"></span>
-                        <img src="<%= thumb.medium || thumb.url %>" alt="" loading="lazy" width="64" height="44">
+                        <img src="<%= thumb.thumb || thumb.medium || thumb.url %>" alt="" loading="lazy" width="64" height="44">
                         <span class="min-w-0 text-left">
                             <span class="block truncate text-[13px] font-medium text-bone"><%= car.model && car.model !== 'ANDERE' ? car.model : helpers.titleParts(car).name %></span>
                             <span class="mt-0.5 block text-xs text-mute"><%= helpers.priceText(car) %></span>

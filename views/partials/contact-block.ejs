@@ -70,6 +70,22 @@
                             </div>
 
                             <div>
+                                <label for="vehicle" class="field-label">Fahrzeug <span class="normal-case tracking-normal text-faint">*</span></label>
+                                <%# site.js turns this into a searchable picker with photos; the select keeps the value and the no-JS fallback. %>
+                                <div class="vpick" data-vehicle-picker>
+                                    <select name="vehicleId" id="vehicle" class="field field-select" required>
+                                        <option value="" disabled selected>Bitte wählen …</option>
+                                        <option value="other">Sonstiges – kein bestimmtes Fahrzeug</option>
+                                        <% (locals.contactVehicleGroups || []).forEach((group) => { %>
+                                        <optgroup label="<%= group.make %>">
+                                            <% group.options.forEach((option) => { %><option value="<%= option.value %>" data-url="<%= option.url %>" data-make="<%= group.make %>" data-name="<%= option.name %>" data-price="<%= option.price || '' %>" data-image="<%= option.image || '' %>"><%= option.label %></option><% }) %>
+                                        </optgroup>
+                                        <% }) %>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
                                 <label for="message" class="field-label">Nachricht <span class="normal-case tracking-normal text-faint">*</span></label>
                                 <textarea rows="5" name="message" id="message" class="field resize-none" placeholder="Marke, Modell, Baujahr, Kilometerstand – oder Ihr Anliegen" required></textarea>
                             </div>

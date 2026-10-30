@@ -411,6 +411,217 @@
         return `+49 ${value.replace(/^0+/, '')}`;
     }
 
+    // Vehicle picker: turns the contact form's <select> into a searchable list with
+    // photos. The select stays in the form, visually hidden, so it still carries the
+    // value and the required-validation (the browser's hint appears over the picker).
+    document.querySelectorAll('[data-vehicle-picker]').forEach((picker) => {
+        const select = picker.querySelector('select');
+        const listId = `${select.id}List`;
+        const coarsePointer = window.matchMedia('(pointer: coarse)').matches;
+        const normalize = (text) => text.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+        const el = (tag, className, text) => {
+            const node = document.createElement(tag);
+            if (className) node.className = className;
+            if (text) node.textContent = text;
+            return node;
+        };
+        const icon = (className, paths) => {
+            const span = el('span', className);
+            span.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths}</svg>`;
+            return span;
+        };
+
+        const items = [...select.options].filter((option) => option.value).map((option) => {
+            const isOther = option.value === 'other';
+            const li = el('li', 'vpick-opt');
+            li.id = `${listId}-${option.value}`;
+            li.setAttribute('role', 'option');
+            li.setAttribute('aria-selected', 'false');
+            const text = el('span', 'vpick-text');
+            if (isOther) {
+                li.append(icon('vpick-media vpick-icon', '<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>'));
+                text.append(el('span', 'vpick-name', 'Sonstiges – kein bestimmtes Fahrzeug'), el('span', 'vpick-hint', 'Auto verkaufen, Finanzierung oder allgemeine Fragen'));
+                li.append(text);
+            } else {
+                const { make = '', name = option.textContent.trim(), price = '', image = '' } = option.dataset;
+                if (image) {
+                    const img = el('img', 'vpick-media');
+                    img.src = image;
+                    img.alt = '';
+                    img.loading = 'lazy';
+                    li.append(img);
+                } else {
+                    li.append(el('span', 'vpick-media'));
+                }
+                text.append(el('span', 'vpick-make', make), el('span', 'vpick-name', name));
+                li.append(text);
+                if (price) li.append(el('span', 'vpick-price', price));
+            }
+            return { option, li, isOther, search: normalize(`${option.dataset.make || ''} ${li.textContent}`) };
+        });
+        const cars = items.filter((item) => !item.isOther);
+
+        const trigger = el('button', 'field vpick-trigger');
+        trigger.type = 'button';
+        trigger.id = `${select.id}Trigger`;
+        trigger.setAttribute('aria-haspopup', 'listbox');
+        trigger.setAttribute('aria-expanded', 'false');
+        const triggerValue = el('span', 'vpick-value');
+        trigger.append(triggerValue, icon('vpick-chevron', '<path d="m6 9 6 6 6-6"/>'));
+
+        const panel = el('div', 'vpick-panel');
+        panel.hidden = true;
+        const searchWrap = icon('vpick-search', '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>');
+        const search = el('input');
+        search.type = 'search';
+        search.placeholder = 'Marke oder Modell suchen …';
+        search.autocomplete = 'off';
+        search.setAttribute('role', 'combobox');
+        search.setAttribute('aria-label', 'Fahrzeug suchen');
+        search.setAttribute('aria-controls', listId);
+        search.setAttribute('aria-expanded', 'true');
+        search.setAttribute('aria-autocomplete', 'list');
+        searchWrap.append(search);
+        const list = el('ul', 'vpick-list');
+        list.id = listId;
+        list.setAttribute('role', 'listbox');
+        list.setAttribute('aria-label', 'Fahrzeuge');
+        const heading = el('li', 'vpick-heading', `Unser Bestand · ${cars.length} Fahrzeuge`);
+        heading.setAttribute('role', 'presentation');
+        const empty = el('li', 'vpick-empty', 'Kein passendes Fahrzeug gefunden.');
+        empty.setAttribute('role', 'presentation');
+        list.append(...items.filter((item) => item.isOther).map((item) => item.li));
+        if (cars.length) list.append(heading, ...cars.map((item) => item.li), empty);
+        panel.append(searchWrap, list);
+
+        picker.classList.add('is-enhanced');
+        select.tabIndex = -1;
+        select.setAttribute('aria-hidden', 'true');
+        picker.append(trigger, panel);
+        const label = document.querySelector(`label[for="${select.id}"]`);
+        if (label) label.htmlFor = trigger.id;
+
+        let visible = items;
+        let active = -1;
+
+        function setActive(index) {
+            visible.forEach((item) => item.li.classList.remove('is-active'));
+            active = index;
+            const item = visible[index];
+            if (item) {
+                item.li.classList.add('is-active');
+                item.li.scrollIntoView({ block: 'nearest' });
+                search.setAttribute('aria-activedescendant', item.li.id);
+            } else {
+                search.removeAttribute('aria-activedescendant');
+            }
+        }
+
+        function filter() {
+            const words = normalize(search.value).split(/\s+/).filter(Boolean);
+            visible = items.filter((item) => {
+                const match = item.isOther || words.every((word) => item.search.includes(word));
+                item.li.hidden = !match;
+                return match;
+            });
+            const carsShown = visible.some((item) => !item.isOther);
+            empty.hidden = carsShown || !words.length;
+            heading.hidden = !carsShown;
+            // While searching, jump to the first matching car rather than "Sonstiges".
+            setActive(words.length && carsShown ? 1 : 0);
+        }
+
+        function render() {
+            const option = select.selectedOptions[0];
+            const item = items.find((entry) => entry.option === option);
+            items.forEach((entry) => entry.li.setAttribute('aria-selected', String(entry === item)));
+            trigger.classList.toggle('has-value', Boolean(item));
+            triggerValue.replaceChildren(...(item
+                ? [...item.li.children].map((child) => child.cloneNode(true))
+                : [el('span', 'vpick-placeholder', 'Fahrzeug auswählen …')]));
+        }
+
+        function open() {
+            panel.hidden = false;
+            trigger.setAttribute('aria-expanded', 'true');
+            search.value = '';
+            filter();
+            const selected = visible.findIndex((item) => item.option === select.selectedOptions[0]);
+            if (selected > -1) setActive(selected);
+            // On phones, don't pop up the keyboard until the visitor taps the search field.
+            if (!coarsePointer) search.focus();
+            panel.scrollIntoView({ block: 'nearest', behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+        }
+
+        function close(returnFocus) {
+            if (panel.hidden) return;
+            panel.hidden = true;
+            trigger.setAttribute('aria-expanded', 'false');
+            if (returnFocus) trigger.focus();
+        }
+
+        function choose(item) {
+            if (!item) return;
+            select.value = item.option.value;
+            select.dispatchEvent(new Event('change', { bubbles: true }));
+            close(true);
+        }
+
+        trigger.addEventListener('click', () => (panel.hidden ? open() : close(false)));
+        trigger.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                open();
+                search.focus();
+            }
+        });
+        search.addEventListener('input', filter);
+        search.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                const step = e.key === 'ArrowDown' ? 1 : -1;
+                setActive((active + step + visible.length) % visible.length);
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                choose(visible[active]);
+            } else if (e.key === 'Escape') {
+                e.preventDefault();
+                close(true);
+            } else if (e.key === 'Tab') {
+                close(false);
+            }
+        });
+        list.addEventListener('click', (e) => choose(items.find((item) => item.li === e.target.closest('.vpick-opt'))));
+        list.addEventListener('mousemove', (e) => {
+            const index = visible.findIndex((item) => item.li === e.target.closest('.vpick-opt'));
+            if (index > -1 && index !== active) setActive(index);
+        });
+        document.addEventListener('pointerdown', (e) => {
+            if (!picker.contains(e.target)) close(false);
+        });
+
+        select.addEventListener('change', () => {
+            picker.classList.remove('is-invalid');
+            render();
+        });
+        select.addEventListener('invalid', () => picker.classList.add('is-invalid'));
+        select.form?.addEventListener('reset', () => setTimeout(render));
+        render();
+    });
+
+    // WhatsApp lines for the chosen car: make + name + price, and its page link.
+    function vehicleLines(select) {
+        const option = select?.selectedOptions[0];
+        if (!option || !option.value) {
+            return [];
+        }
+        const group = option.parentElement.tagName === 'OPTGROUP' ? `${option.parentElement.label} ` : '';
+        return [
+            `🚗 *Fahrzeug:* ${group}${option.textContent.trim()}`,
+            option.dataset.url ? `🔗 ${option.dataset.url}` : null
+        ];
+    }
+
     if (contactForm) {
         const submitBtn = document.getElementById('submitBtn');
         const submitText = document.getElementById('submitText');
@@ -421,8 +632,9 @@
         // that is clearly marked as coming from the website.
         document.getElementById('whatsappSendBtn')?.addEventListener('click', () => {
             const nameField = document.getElementById('name');
+            const vehicleField = document.getElementById('vehicle');
             const messageField = document.getElementById('message');
-            for (const field of [nameField, messageField]) {
+            for (const field of [nameField, vehicleField, messageField].filter(Boolean)) {
                 if (!field.value.trim()) {
                     field.reportValidity();
                     field.focus();
@@ -438,6 +650,7 @@
                 `👤 *Name:* ${nameField.value.trim()}`,
                 phone ? `📞 *Telefon:* ${phone}` : null,
                 email ? `✉️ *E-Mail:* ${email}` : null,
+                ...vehicleLines(vehicleField),
                 '',
                 '💬 *Nachricht:*',
                 messageField.value.trim(),
@@ -471,6 +684,7 @@
                 email: document.getElementById('email').value.trim(),
                 phone: document.getElementById('phone').value.trim(),
                 message: document.getElementById('message').value.trim(),
+                vehicleId: document.getElementById('vehicle')?.value || '',
                 privacyConsent: privacyConsentField.checked,
                 website: document.getElementById('website').value.trim()
             };

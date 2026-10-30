@@ -33,7 +33,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Bump when styles.css or js/site.js change so browsers fetch the new files
-const ASSET_VERSION = '20261030-highlights';
+const ASSET_VERSION = '20261030-vehicle-picker';
 
 app.use((req, res, next) => {
     res.locals.assetVersion = ASSET_VERSION;
@@ -85,7 +85,8 @@ function getSeoData(title, description, canonicalPath) {
 app.get('/', cacheHtml, async (req, res, next) => {
     try {
         // A failing inventory read must never break the homepage; the slideshow is just hidden.
-        const featured = pickFeaturedVehicles(await getListedVehicles().catch(() => []));
+        const vehicles = await getListedVehicles().catch(() => []);
+        const featured = pickFeaturedVehicles(vehicles);
         res.render('index', {
             ...getSeoData(
                 'HF Autos | H&F Autohaus Bodenheim - Gebrauchtwagen in der Naehe',
@@ -93,6 +94,7 @@ app.get('/', cacheHtml, async (req, res, next) => {
                 '/'
             ),
             featured,
+            contactVehicleGroups: vehicleLabels.contactVehicleGroups(vehicles),
             helpers: vehicleLabels
         });
     } catch (error) { next(error); }
@@ -106,12 +108,18 @@ app.get('/ueber-uns', cacheHtml, (req, res) => {
     ));
 });
 
-app.get('/kontakt', cacheHtml, (req, res) => {
-    res.render('kontakt', getSeoData(
-        'Kontakt | H&F Autohaus Bodenheim',
-        'Kontakt zum H&F Autohaus Bodenheim: Am Kümmerling 41a, 55294 Bodenheim. Telefon 0176 62878366, WhatsApp und E-Mail. Mo–Fr 9–18 Uhr.',
-        '/kontakt'
-    ));
+app.get('/kontakt', cacheHtml, async (req, res, next) => {
+    try {
+        const vehicles = await getListedVehicles().catch(() => []);
+        res.render('kontakt', {
+            ...getSeoData(
+                'Kontakt | H&F Autohaus Bodenheim',
+                'Kontakt zum H&F Autohaus Bodenheim: Am Kümmerling 41a, 55294 Bodenheim. Telefon 0176 62878366, WhatsApp und E-Mail. Mo–Fr 9–18 Uhr.',
+                '/kontakt'
+            ),
+            contactVehicleGroups: vehicleLabels.contactVehicleGroups(vehicles)
+        });
+    } catch (error) { next(error); }
 });
 
 app.get('/impressum', cacheHtml, (req, res) => {
@@ -218,6 +226,26 @@ app.get('/bestand', async (req, res, next) => {
     } catch (error) { next(error); }
 });
 
+// Resolves the contact form's vehicle choice against the stored inventory, so the
+// email shows real listing data. "other" means no specific car.
+async function findContactVehicle(vehicleId) {
+    if (vehicleId === 'other') {
+        return null;
+    }
+    const vehicle = (await getListedVehicles().catch(() => [])).find((v) => v.id === String(vehicleId));
+    if (!vehicle) {
+        return { id: String(vehicleId).slice(0, 40), name: 'Fahrzeug nicht mehr im Bestand' };
+    }
+    const image = vehicle.images && vehicle.images[0];
+    return {
+        id: vehicle.id,
+        name: `${vehicle.make} ${vehicleLabels.titleParts(vehicle).name}`,
+        price: vehicle.price && vehicle.price.amount != null ? vehicleLabels.priceText(vehicle) : null,
+        url: `${SITE_URL}/bestand/${vehicle.slug}`,
+        image: image ? image.thumb || image.medium || image.url : null
+    };
+}
+
 async function getListedVehicles() {
     const inventory = await getInventory({ store: inventoryStore });
     return inventory.source === 'mobile.de' ? inventory.vehicles.filter(v => !v.isSample) : [];
@@ -308,7 +336,7 @@ app.post('/contact', async (req, res) => {
     res.set('Cache-Control', NO_STORE);
 
     try {
-        const { name, email, phone, message, privacyConsent, website } = req.body;
+        const { name, email, phone, message, privacyConsent, website, vehicleId } = req.body;
         const hasPrivacyConsent = privacyConsent === true
             || privacyConsent === 'true'
             || privacyConsent === 'on'
@@ -330,6 +358,13 @@ app.post('/contact', async (req, res) => {
             });
         }
 
+        if (!vehicleId) {
+            return res.status(400).json({
+                success: false,
+                message: 'Bitte wählen Sie ein Fahrzeug oder „Sonstiges“.'
+            });
+        }
+
         if (!resend) {
             console.error('Contact form submitted but RESEND_API_KEY is not set');
             return res.status(503).json({
@@ -339,7 +374,10 @@ app.post('/contact', async (req, res) => {
         }
 
         // Send email using Resend
-        const notification = buildContactNotification({ name, email, phone, message });
+        const notification = buildContactNotification({
+            name, email, phone, message,
+            vehicle: await findContactVehicle(vehicleId)
+        });
         const emailResult = await resend.emails.send({
             from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
             to: DEFAULT_CONTACT_EMAIL,

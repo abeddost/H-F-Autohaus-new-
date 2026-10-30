@@ -322,6 +322,25 @@
         @apply border-white/20;
     }
 
+    .field-select {
+        @apply cursor-pointer appearance-none pr-11;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+        background-position: right 1rem center;
+        background-repeat: no-repeat;
+        background-size: 18px;
+    }
+
+    /* Placeholder colour until a choice is made (the empty option is invalid for a required select). */
+    .field-select:invalid {
+        @apply text-faint;
+    }
+
+    .field-select option,
+    .field-select optgroup {
+        background-color: #141417;
+        color: #f2f4f8;
+    }
+
     .field:focus {
         @apply border-accent/70 outline-none ring-0;
         box-shadow: 0 0 0 4px rgba(74, 134, 255, 0.16);
@@ -637,6 +656,39 @@
 @keyframes feat-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 .feat-dot { transition: width .4s cubic-bezier(0.16,1,0.3,1); }
 @media(max-width: 639px) { .feat-facts { gap: 18px 14px; } .feat-facts > div { min-height: 34px; padding-left: 44px; } .feat-fact-icon { width: 34px; height: 34px; border-radius: 10px; } .feat-facts dt { font-size: 10px; letter-spacing: .06em; } .feat-dot { width: 20px; } .feat-dot.is-active { width: 40px; } }
+
+/* Contact form vehicle picker (built by site.js from the select) ---------- */
+.vpick { position: relative; }
+.vpick.is-enhanced > select { position: absolute; inset: 0; z-index: -1; opacity: 0; pointer-events: none; }
+.vpick-trigger { display: flex; min-height: 56px; align-items: center; gap: 12px; padding-top: 8px; padding-bottom: 8px; cursor: pointer; text-align: left; }
+.vpick-trigger[aria-expanded="true"] { border-color: #4a86ffb3; box-shadow: 0 0 0 4px rgba(74, 134, 255, 0.16); }
+.vpick.is-invalid .vpick-trigger { border-color: #f87171b3; }
+.vpick-value { display: flex; min-width: 0; flex: 1; align-items: center; gap: 12px; }
+.vpick-placeholder { color: #656b76; }
+.vpick-chevron { display: grid; flex: none; color: #9ca3af; transition: transform .25s; }
+.vpick-chevron svg, .vpick-icon svg, .vpick-search svg { width: 18px; height: 18px; }
+.vpick-trigger[aria-expanded="true"] .vpick-chevron { transform: rotate(180deg); }
+.vpick-panel { position: absolute; left: 0; right: 0; top: calc(100% + 8px); z-index: 40; overflow: hidden; border: 1px solid #ffffff1f; border-radius: 16px; background: #141417; box-shadow: 0 30px 60px -24px #000000e6; }
+.vpick-search { display: flex; align-items: center; gap: 10px; padding: 0 16px; border-bottom: 1px solid #ffffff14; color: #9ca3af; }
+.vpick-search input { min-width: 0; height: 52px; flex: 1; border: 0; outline: 0; background: transparent; color: #f2f4f8; font: inherit; font-size: 15px; }
+.vpick-search input::placeholder { color: #656b76; }
+.vpick-search input::-webkit-search-cancel-button { filter: invert(1) opacity(.5); }
+.vpick-list { max-height: min(360px, 55vh); overflow-y: auto; overscroll-behavior: contain; padding: 6px; }
+.vpick-list [hidden] { display: none; } /* .vpick-opt's display: flex would otherwise beat [hidden] */
+.vpick-opt { display: flex; align-items: center; gap: 12px; border-radius: 10px; padding: 8px 10px; cursor: pointer; }
+.vpick-opt.is-active { background: #ffffff0f; }
+.vpick-opt[aria-selected="true"] { background: #4a86ff1f; }
+.vpick-media { display: block; width: 60px; height: 42px; flex: none; border-radius: 8px; background: #1b1b1f; object-fit: cover; }
+.vpick-icon { display: grid; place-items: center; border: 1px solid #4a86ff2e; background: #4a86ff14; color: #8fb4ff; }
+.vpick-text { display: flex; min-width: 0; flex: 1; flex-direction: column; }
+.vpick-make { color: #9ca3af; font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; }
+.vpick-name { display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: #f2f4f8; font-size: 14.5px; font-weight: 500; line-height: 1.3; }
+.vpick-hint { overflow: hidden; color: #9ca3af; font-size: 12.5px; text-overflow: ellipsis; white-space: nowrap; }
+.vpick-price { flex: none; color: #f2f4f8; font-size: 13.5px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.vpick-heading { padding: 12px 10px 6px; color: #656b76; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+.vpick-empty { padding: 12px 10px 14px; color: #9ca3af; font-size: 13.5px; }
+.vpick-trigger .vpick-media { width: 52px; height: 36px; }
+@media(max-width: 639px) { .vpick-media { width: 52px; height: 36px; } .vpick-price { font-size: 12.5px; } .vpick-hint { white-space: normal; } }
 
 /* Vehicle detail page ------------------------------------------------------- */
 .vdp-layout { display: grid; gap: 20px; grid-template-areas: "head" "gallery" "info"; }
