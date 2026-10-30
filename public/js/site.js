@@ -190,6 +190,26 @@
 
     if (prefersReducedMotion) {
         document.querySelectorAll('video[autoplay]').forEach((video) => video.pause());
+    } else {
+        // Phones can block autoplay (iOS Low Power Mode, data saver) or leave videos
+        // paused after switching apps. Muted videos may start on any user gesture, so
+        // retry on taps/scrolls and when the page is shown again, until all are playing.
+        const backgroundVideos = [...document.querySelectorAll('video[autoplay], video[data-lazy-video]')];
+        const gestures = ['touchend', 'click', 'keydown', 'scroll'];
+        const resumeVideos = () => {
+            const ready = backgroundVideos.filter((video) => !video.querySelector('source[data-src]'));
+            ready.forEach((video) => {
+                if (video.paused) video.play().catch(() => {});
+            });
+            if (ready.length === backgroundVideos.length && ready.every((video) => !video.paused)) {
+                gestures.forEach((type) => window.removeEventListener(type, resumeVideos));
+            }
+        };
+        gestures.forEach((type) => window.addEventListener(type, resumeVideos, { passive: true }));
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) resumeVideos();
+        });
+        window.addEventListener('pageshow', resumeVideos);
     }
 
     // ---------------------------------------------------------------------

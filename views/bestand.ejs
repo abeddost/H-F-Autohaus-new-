@@ -28,8 +28,8 @@ const anyFilterActive = Boolean(filters.q || filters.make || filters.fuel || fil
                 <% for (const [key,label,placeholder] of [['make','Marke','Alle Marken'],['fuel','Kraftstoff','Alle Kraftstoffe']]) { %>
                 <label class="stock-field"><%= label %><select name="<%= key %>"><option value=""><%= placeholder %></option><% options[key].forEach(value => { %><option value="<%= value %>" <%= filters[key] === value ? 'selected' : '' %>><%= value %></option><% }) %></select></label>
                 <% } %>
-                <label class="stock-field">Preis bis (€)<input type="number" name="maxPrice" min="0" step="1" placeholder="Beliebig" value="<%= filters.maxPrice %>"></label>
-                <label class="stock-field">Sortierung<select name="sort"><% for(const [value,label] of [['newest','Zuletzt hinzugefügt'],['price-asc','Preis aufsteigend'],['price-desc','Preis absteigend'],['mileage','Wenigste Kilometer'],['year','Neueste Erstzulassung']]) { %><option value="<%= value %>" <%= filters.sort === value ? 'selected' : '' %>><%= label %></option><% } %></select></label>
+                <label class="stock-field stock-wide">Preis bis (€)<input type="number" name="maxPrice" min="0" step="1" placeholder="Beliebig" value="<%= filters.maxPrice %>"></label>
+                <label class="stock-field stock-wide">Sortierung<select name="sort"><% for(const [value,label] of [['newest','Zuletzt hinzugefügt'],['price-asc','Preis aufsteigend'],['price-desc','Preis absteigend'],['mileage','Wenigste Kilometer'],['year','Neueste Erstzulassung']]) { %><option value="<%= value %>" <%= filters.sort === value ? 'selected' : '' %>><%= label %></option><% } %></select></label>
                 <button class="btn btn-primary stock-submit" type="submit">Anzeigen <%- include('partials/icon', {name:'arrow-right'}) %></button>
             </div>
             <details class="stock-more" <%= moreFiltersActive ? 'open' : '' %>>

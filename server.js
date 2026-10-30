@@ -8,7 +8,7 @@ const { filterVehicles, pickFeaturedVehicles } = require('./lib/vehicleFilters')
 const { createInventoryStore } = require('./lib/inventoryStore');
 const { syncInventory, getInventory, getSyncStatus } = require('./lib/inventory');
 const { isSyncAuthorized } = require('./lib/syncAuth');
-const { buildContactNotification, escapeHtml } = require('./lib/contactEmail');
+const { buildContactNotification, buildContactConfirmation } = require('./lib/contactEmail');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -33,7 +33,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Bump when styles.css or js/site.js change so browsers fetch the new files
-const ASSET_VERSION = '20261030-vehicle-picker';
+const ASSET_VERSION = '20261030-mobile-fixes';
 
 app.use((req, res, next) => {
     res.locals.assetVersion = ASSET_VERSION;
@@ -374,10 +374,8 @@ app.post('/contact', async (req, res) => {
         }
 
         // Send email using Resend
-        const notification = buildContactNotification({
-            name, email, phone, message,
-            vehicle: await findContactVehicle(vehicleId)
-        });
+        const vehicle = await findContactVehicle(vehicleId);
+        const notification = buildContactNotification({ name, email, phone, message, vehicle });
         const emailResult = await resend.emails.send({
             from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
             to: DEFAULT_CONTACT_EMAIL,
@@ -395,21 +393,15 @@ app.post('/contact', async (req, res) => {
             });
         }
 
-        // Send confirmation email to customer
+        // Confirmation to the visitor; replies reach the dealership inbox, not the sending address.
+        const confirmation = buildContactConfirmation({ name, message, vehicle });
         await resend.emails.send({
             from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
             to: email,
-            subject: 'Ihre Anfrage bei H&F Autohaus Bodenheim',
-            html: `
-                <h2>Vielen Dank fuer Ihre Anfrage!</h2>
-                <p>Sehr geehrte/r ${escapeHtml(name)},</p>
-                <p>wir haben Ihre Nachricht erhalten und werden uns schnellstmoeglich bei Ihnen melden.</p>
-                <p><strong>Ihre Nachricht:</strong></p>
-                <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
-                <hr>
-                <p>Mit freundlichen Gruessen,<br>H&F Autohaus Bodenheim</p>
-                <p><small>Am Kuemmerling 41a, 55294 Bodenheim<br>Tel: 017662878366<br>E-Mail: hf.fahrzeuge@gmail.com</small></p>
-            `
+            replyTo: DEFAULT_CONTACT_EMAIL,
+            subject: confirmation.subject,
+            html: confirmation.html,
+            text: confirmation.text
         });
 
         res.json({

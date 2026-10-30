@@ -461,6 +461,13 @@
     /* Long-form content (blog, legal) ------------------------------------- */
     .prose-hf {
         @apply max-w-prose text-[1.0625rem] leading-[1.8] text-bone/75;
+        /* Long German compounds and URLs must wrap instead of widening the page on phones. */
+        overflow-wrap: break-word;
+    }
+
+    .prose-hf h2,
+    .prose-hf h3 {
+        hyphens: auto;
     }
 
     .prose-hf .lead-in {
@@ -606,7 +613,7 @@
 @media(min-width: 1024px) and (max-width: 1279px) { .stock-filter-row { grid-template-columns: minmax(0,1.3fr) repeat(4,minmax(0,1fr)) auto; gap: 10px; } .stock-field input, .stock-field select { padding: 0 9px; font-size: 12.5px; } }
 @media(max-width: 1023px) { .stock-filter-row { grid-template-columns: repeat(3,minmax(0,1fr)); } .stock-search { grid-column: span 2; } }
 @media(max-width: 1023px) { .stock-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
-@media(max-width: 639px) { .stock-grid { grid-template-columns: 1fr; } .stock-filter-row, .stock-more-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .stock-search, .stock-submit { grid-column: 1/-1; } .stock-more summary span { display: none; } }
+@media(max-width: 639px) { .stock-grid { grid-template-columns: 1fr; } .stock-filter-row, .stock-more-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .stock-search, .stock-submit, .stock-wide { grid-column: 1/-1; } .stock-more summary span { display: none; } }
 /* Homepage Top-Fahrzeuge slideshow ---------------------------------------- */
 .feat-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; border-radius: 22px; }
 .feat-track::-webkit-scrollbar { display: none; }
@@ -646,7 +653,7 @@
 .feat-arrow { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid #ffffff26; border-radius: 50%; color: #f2f4f8; transition: border-color .25s, background-color .25s; }
 .feat-arrow:hover { border-color: #4a86ff; background: #4a86ff1a; }
 .feat-dots { display: flex; align-items: center; gap: 8px; }
-.feat-dot { position: relative; width: 28px; height: 20px; }
+.feat-dot { position: relative; width: 28px; height: 32px; } /* tall tap area, thin visible bar */
 .feat-dot span { position: absolute; left: 0; right: 0; top: 50%; height: 3px; margin-top: -1.5px; overflow: hidden; border-radius: 3px; background: #ffffff26; transition: background-color .3s; }
 .feat-dot:hover span { background: #ffffff4d; }
 .feat-dot.is-active { width: 56px; }
@@ -728,3 +735,12 @@
 @media(max-width: 1023px) { .vdp-features { grid-template-columns: repeat(2,minmax(0,1fr)); } .vdp-main { max-height: none; } }
 @media(max-width: 639px) { .vdp-features { grid-template-columns: 1fr; } .vdp-thumb { width: 68px; } }
 @media(prefers-reduced-motion: reduce) { .stock-card, .stock-photo img { transition: none; } }
+
+/* iPhones zoom the page when a form field with text under 16px gets focus. */
+@media (max-width: 1023px), (pointer: coarse) {
+    input:not([type="checkbox"]):not([type="radio"]),
+    select,
+    textarea {
+        font-size: 16px !important;
+    }
+}
